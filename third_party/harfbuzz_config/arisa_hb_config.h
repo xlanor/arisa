@@ -1,0 +1,27 @@
+#ifndef ARISA_HB_CONFIG_H
+#define ARISA_HB_CONFIG_H
+
+#define HB_NO_AAT
+#define HB_NO_BUFFER_SERIALIZE
+#define HB_NO_BUFFER_VERIFY
+#define HB_NO_BUFFER_MESSAGE
+#define HB_NO_BITMAP
+#define HB_NO_COLOR
+#define HB_NO_DRAW
+#define HB_NO_PAINT
+#define HB_NO_ERRNO
+#define HB_NO_FACE_COLLECT_UNICODES
+#define HB_NO_GETENV
+#define HB_NO_LAYOUT_COLLECT_GLYPHS
+#define HB_NO_MATH
+#define HB_NO_META
+#define HB_NO_METRICS
+#define HB_NO_MMAP
+#define HB_NO_NAME
+#define HB_NO_OPEN
+#define HB_NO_OT_FETCH
+#define HB_NO_SETLOCALE
+#define HB_NO_STYLE
+#define HB_NO_VERTICAL
+
+#endif

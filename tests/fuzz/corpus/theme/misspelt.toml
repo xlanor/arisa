@@ -1,0 +1,6 @@
+schema = 1
+extends = "base"
+
+[colours]
+label = "#000000"
+labell = "#000000"

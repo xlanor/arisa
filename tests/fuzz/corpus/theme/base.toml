@@ -1,0 +1,21 @@
+schema = 1
+name = "base"
+extends = "default"
+accent = "#FF9500"
+
+[radii]
+card = 20
+
+[metrics]
+button_horizontal_padding = 16
+
+[spacing]
+md = 14
+
+[type.body]
+size = 15
+line_height = 19
+
+[preferences]
+dynamic_type_size = "x_large"
+handheld_scale = 1.5

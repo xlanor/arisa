@@ -1,0 +1,4 @@
+BasedOnStyle: Google
+IncludeBlocks: Preserve
+CommentPragmas: "^/ *@var "
+FixNamespaceComments: false

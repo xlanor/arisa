@@ -1,0 +1,108 @@
+#	os macOS Version 27.0 (Build 26A428)
+#	accent multicolor (default)
+#	render_scale 2
+#	main_screen_scale 1
+key	light	dark	unit
+localization.hstack.ltr.a_x	0	0	pt
+localization.hstack.ltr.b_x	50	50	pt
+localization.hstack.ltr.c_x	120	120	pt
+localization.hstack.rtl.a_x	260	260	pt
+localization.hstack.rtl.b_x	190	190	pt
+localization.hstack.rtl.c_x	100	100	pt
+localization.padding_leading.rtl.x	140	140	pt
+localization.frame_leading.rtl.x	0	0	pt
+localization.zstack_leading.rtl.x	160	160	pt
+localization.behavior_fixed.rtl.a_x	160	160	pt
+localization.behavior_fixed.rtl.b_x	90	90	pt
+localization.grid.rtl.a_x	260	260	pt
+localization.grid.rtl.b_x	190	190	pt
+localization.grid.rtl.c_x	100	100	pt
+localization.lazy_grid.rtl.a_x	114	114	pt
+localization.lazy_grid.rtl.b_x	46	46	pt
+localization.slider.rtl.right_end	#0078F9		colour
+localization.slider.rtl.left_end	#E6E6E6		colour
+localization.number.en_US	1,234,567.891	1,234,567.891	text
+localization.percent.en_US	25.6%	25.6%	text
+localization.number_small.en_US	1,234.5	1,234.5	text
+localization.number.de_DE	1.234.567,891	1.234.567,891	text
+localization.percent.de_DE	25,6 %	25,6 %	text
+localization.number_small.de_DE	1.234,5	1.234,5	text
+localization.number.fr_FR	1 234 567,891	1 234 567,891	text
+localization.percent.fr_FR	25,6 %	25,6 %	text
+localization.number_small.fr_FR	1 234,5	1 234,5	text
+localization.number.ja_JP	1,234,567.891	1,234,567.891	text
+localization.percent.ja_JP	25.6%	25.6%	text
+localization.number_small.ja_JP	1,234.5	1,234.5	text
+localization.number.es_ES	1.234.567,891	1.234.567,891	text
+localization.percent.es_ES	25,6 %	25,6 %	text
+localization.number_small.es_ES	1234,5	1234,5	text
+localization.number.ar	1,234,567.891	1,234,567.891	text
+localization.percent.ar	25.6‎%‎	25.6‎%‎	text
+localization.number_small.ar	1,234.5	1,234.5	text
+localization.number.he_IL	1,234,567.891	1,234,567.891	text
+localization.percent.he_IL	25.6%	25.6%	text
+localization.number_small.he_IL	1,234.5	1,234.5	text
+localization.number.ru_RU	1 234 567,891	1 234 567,891	text
+localization.percent.ru_RU	25,6 %	25,6 %	text
+localization.number_small.ru_RU	1 234,5	1 234,5	text
+localization.date.numeric.en_US	11/22/2026	11/22/2026	text
+localization.date.abbreviated.en_US	Nov 22, 2026	Nov 22, 2026	text
+localization.date.long.en_US	November 22, 2026	November 22, 2026	text
+localization.date.complete.en_US	Sunday, November 22, 2026	Sunday, November 22, 2026	text
+localization.date.time.en_US	1:05 PM	1:05 PM	text
+localization.date.both.en_US	Nov 22, 2026 at 1:05 PM	Nov 22, 2026 at 1:05 PM	text
+localization.date.numeric.en_GB	22/11/2026	22/11/2026	text
+localization.date.abbreviated.en_GB	22 Nov 2026	22 Nov 2026	text
+localization.date.long.en_GB	22 November 2026	22 November 2026	text
+localization.date.complete.en_GB	Sunday, 22 November 2026	Sunday, 22 November 2026	text
+localization.date.time.en_GB	13:05	13:05	text
+localization.date.both.en_GB	22 Nov 2026 at 13:05	22 Nov 2026 at 13:05	text
+localization.date.numeric.de_DE	22.11.2026	22.11.2026	text
+localization.date.abbreviated.de_DE	22. Nov. 2026	22. Nov. 2026	text
+localization.date.long.de_DE	22. November 2026	22. November 2026	text
+localization.date.complete.de_DE	Sonntag, 22. November 2026	Sonntag, 22. November 2026	text
+localization.date.time.de_DE	13:05	13:05	text
+localization.date.both.de_DE	22. Nov. 2026, 13:05	22. Nov. 2026, 13:05	text
+localization.date.numeric.fr_FR	22/11/2026	22/11/2026	text
+localization.date.abbreviated.fr_FR	22 nov. 2026	22 nov. 2026	text
+localization.date.long.fr_FR	22 novembre 2026	22 novembre 2026	text
+localization.date.complete.fr_FR	dimanche 22 novembre 2026	dimanche 22 novembre 2026	text
+localization.date.time.fr_FR	13:05	13:05	text
+localization.date.both.fr_FR	22 nov. 2026 à 13:05	22 nov. 2026 à 13:05	text
+localization.date.numeric.ja_JP	2026/11/22	2026/11/22	text
+localization.date.abbreviated.ja_JP	2026年11月22日	2026年11月22日	text
+localization.date.long.ja_JP	2026年11月22日	2026年11月22日	text
+localization.date.complete.ja_JP	2026年11月22日 日曜日	2026年11月22日 日曜日	text
+localization.date.time.ja_JP	13:05	13:05	text
+localization.date.both.ja_JP	2026年11月22日 13:05	2026年11月22日 13:05	text
+localization.date.numeric.ar	22‏/11‏/2026	22‏/11‏/2026	text
+localization.date.abbreviated.ar	22 نوفمبر، 2026	22 نوفمبر، 2026	text
+localization.date.long.ar	22 نوفمبر، 2026	22 نوفمبر، 2026	text
+localization.date.complete.ar	الأحد، 22 نوفمبر، 2026	الأحد، 22 نوفمبر، 2026	text
+localization.date.time.ar	1:05 م	1:05 م	text
+localization.date.both.ar	22 نوفمبر، 2026، 1:05 م	22 نوفمبر، 2026، 1:05 م	text
+localization.date.numeric.he_IL	22.11.2026	22.11.2026	text
+localization.date.abbreviated.he_IL	22 בנוב׳ 2026	22 בנוב׳ 2026	text
+localization.date.long.he_IL	22 בנובמבר 2026	22 בנובמבר 2026	text
+localization.date.complete.he_IL	יום ראשון, 22 בנובמבר 2026	יום ראשון, 22 בנובמבר 2026	text
+localization.date.time.he_IL	13:05	13:05	text
+localization.date.both.he_IL	22 בנוב׳ 2026, 13:05	22 בנוב׳ 2026, 13:05	text
+localization.relative.past_hours.en_US	3 hours ago	3 hours ago	text
+localization.relative.future_days.en_US	in 2 days	in 2 days	text
+localization.relative.past_minute.en_US	1 minute ago	1 minute ago	text
+localization.relative.past_hours.de_DE	vor 3 Stunden	vor 3 Stunden	text
+localization.relative.future_days.de_DE	in 2 Tagen	in 2 Tagen	text
+localization.relative.past_minute.de_DE	vor 1 Minute	vor 1 Minute	text
+localization.relative.past_hours.ja_JP	3 時間前	3 時間前	text
+localization.relative.future_days.ja_JP	2 日後	2 日後	text
+localization.relative.past_minute.ja_JP	1 分前	1 分前	text
+localization.relative.past_hours.ar	قبل 3 ساعات	قبل 3 ساعات	text
+localization.relative.future_days.ar	خلال يومين	خلال يومين	text
+localization.relative.past_minute.ar	قبل دقيقة واحدة	قبل دقيقة واحدة	text
+localization.upper.tr	İSTANBUL	İSTANBUL	text
+localization.lower.tr	ıstanbul	ıstanbul	text
+localization.upper.el	ΑΛΦΑ	ΑΛΦΑ	text
+localization.lower.sigma	οδος	οδος	text
+localization.legibility.regular_width	105	105	pt
+localization.legibility.bold_width	109	109	pt
+localization.legibility.semibold_width	109	109	pt

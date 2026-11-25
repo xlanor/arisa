@@ -1,0 +1,424 @@
+#	os macOS Version 27.0 (Build 26A428)
+#	accent multicolor (default)
+#	render_scale 2
+#	main_screen_scale 1
+key	light	dark	unit
+table.automatic.text_lines	5	5	
+table.automatic.line0.top	10	10	pt
+table.automatic.line0.bottom	18	18	pt
+table.automatic.line0.leading	19	18.5	pt
+table.automatic.line1.top	40	40	pt
+table.automatic.line1.bottom	53	53	pt
+table.automatic.line1.leading	16	16	pt
+table.automatic.line2.top	64	64	pt
+table.automatic.line2.bottom	74	74	pt
+table.automatic.line2.leading	17	17	pt
+table.automatic.line3.top	88	88	pt
+table.automatic.line3.bottom	98.5	98.5	pt
+table.automatic.line3.leading	16	16	pt
+table.automatic.line4.top	112	112	pt
+table.automatic.line4.bottom	122	122	pt
+table.automatic.line4.leading	17	17	pt
+table.automatic.row_pitch	21	21	pt
+table.automatic.header_to_row_baseline	35	35	pt
+table.automatic.rule_count	16	18	
+table.automatic.rule0.y	26.5	26.5	pt
+table.automatic.rule0.colour	#F2F2F2	#2B2B2B	colour
+table.automatic.rule1.y	27	27	pt
+table.automatic.rule1.colour	#E5E5E5	#383838	colour
+table.automatic.rule2.y	28.5	27.5	pt
+table.automatic.rule2.colour	#F2F2F2	#333333	colour
+table.automatic.rule3.y	29	28	pt
+table.automatic.rule3.colour	#FFFFFF	#2E2E2E	colour
+table.automatic.rule4.y	56.5	28.5	pt
+table.automatic.rule4.colour	#FAFAFA	#262626	colour
+table.automatic.rule5.y	57	29	pt
+table.automatic.rule5.colour	#F4F5F5	#1E1E1E	colour
+table.automatic.rule6.y	80.5	56.5	pt
+table.automatic.rule6.colour	#FAFAFA	#242424	colour
+table.automatic.rule7.y	81	57	pt
+table.automatic.rule7.colour	#FFFFFF	#292929	colour
+table.automatic.rule8.y	104.5	80.5	pt
+table.automatic.rule8.colour	#FAFAFA	#242424	colour
+table.automatic.rule9.y	105	81	pt
+table.automatic.rule9.colour	#F4F5F5	#1E1E1E	colour
+table.automatic.rule10.y	128.5	104.5	pt
+table.automatic.rule10.colour	#FAFAFA	#242424	colour
+table.automatic.rule11.y	129	105	pt
+table.automatic.rule11.colour	#FFFFFF	#292929	colour
+table.automatic.rule12.y	152.5	128.5	pt
+table.automatic.rule12.colour	#FAFAFA	#242424	colour
+table.automatic.rule13.y	153	129	pt
+table.automatic.rule13.colour	#F4F5F5	#1E1E1E	colour
+table.automatic.header_fill	#FFFFFF	#1E1E1E	colour
+table.automatic.row0_fill	#FFFFFF	#1E1E1E	colour
+table.automatic.row1_fill	#F4F5F5	#292929	colour
+table.automatic.header_ink0.x	18.5	18.5	pt
+table.automatic.header_ink1.x	26	26	pt
+table.automatic.header_ink2.x	32.5	32.5	pt
+table.automatic.header_ink3.x	42	41.5	pt
+table.automatic.header_ink4.x	130.5	130.5	pt
+table.automatic.header_ink5.x	137.5	137.5	pt
+table.automatic.header_ink6.x	140.5	140	pt
+table.automatic.header_ink7.x	146.5	146.5	pt
+table.automatic.header_ink8.x	242	242	pt
+table.automatic.header_ink9.x	249	249	pt
+table.automatic.header_ink10.x	252	252	pt
+table.automatic.header_ink11.x	257.5	257.5	pt
+table.inset.text_lines	5	5	
+table.inset.line0.top	10	10	pt
+table.inset.line0.bottom	18	18	pt
+table.inset.line0.leading	19	18.5	pt
+table.inset.line1.top	40	40	pt
+table.inset.line1.bottom	53	53	pt
+table.inset.line1.leading	16	16	pt
+table.inset.line2.top	64	64	pt
+table.inset.line2.bottom	74	74	pt
+table.inset.line2.leading	17	17	pt
+table.inset.line3.top	88	88	pt
+table.inset.line3.bottom	98.5	98.5	pt
+table.inset.line3.leading	16	16	pt
+table.inset.line4.top	112	112	pt
+table.inset.line4.bottom	122	122	pt
+table.inset.line4.leading	17	17	pt
+table.inset.row_pitch	21	21	pt
+table.inset.header_to_row_baseline	35	35	pt
+table.inset.rule_count	16	18	
+table.inset.rule0.y	26.5	26.5	pt
+table.inset.rule0.colour	#F2F2F2	#2B2B2B	colour
+table.inset.rule1.y	27	27	pt
+table.inset.rule1.colour	#E5E5E5	#383838	colour
+table.inset.rule2.y	28.5	27.5	pt
+table.inset.rule2.colour	#F2F2F2	#333333	colour
+table.inset.rule3.y	29	28	pt
+table.inset.rule3.colour	#FFFFFF	#2E2E2E	colour
+table.inset.rule4.y	56.5	28.5	pt
+table.inset.rule4.colour	#FAFAFA	#262626	colour
+table.inset.rule5.y	57	29	pt
+table.inset.rule5.colour	#F4F5F5	#1E1E1E	colour
+table.inset.rule6.y	80.5	56.5	pt
+table.inset.rule6.colour	#FAFAFA	#242424	colour
+table.inset.rule7.y	81	57	pt
+table.inset.rule7.colour	#FFFFFF	#292929	colour
+table.inset.rule8.y	104.5	80.5	pt
+table.inset.rule8.colour	#FAFAFA	#242424	colour
+table.inset.rule9.y	105	81	pt
+table.inset.rule9.colour	#F4F5F5	#1E1E1E	colour
+table.inset.rule10.y	128.5	104.5	pt
+table.inset.rule10.colour	#FAFAFA	#242424	colour
+table.inset.rule11.y	129	105	pt
+table.inset.rule11.colour	#FFFFFF	#292929	colour
+table.inset.rule12.y	152.5	128.5	pt
+table.inset.rule12.colour	#FAFAFA	#242424	colour
+table.inset.rule13.y	153	129	pt
+table.inset.rule13.colour	#F4F5F5	#1E1E1E	colour
+table.inset.header_fill	#FFFFFF	#1E1E1E	colour
+table.inset.row0_fill	#FFFFFF	#1E1E1E	colour
+table.inset.row1_fill	#F4F5F5	#292929	colour
+table.inset.header_ink0.x	18.5	18.5	pt
+table.inset.header_ink1.x	26	26	pt
+table.inset.header_ink2.x	32.5	32.5	pt
+table.inset.header_ink3.x	42	41.5	pt
+table.inset.header_ink4.x	130.5	130.5	pt
+table.inset.header_ink5.x	137.5	137.5	pt
+table.inset.header_ink6.x	140.5	140	pt
+table.inset.header_ink7.x	146.5	146.5	pt
+table.inset.header_ink8.x	242	242	pt
+table.inset.header_ink9.x	249	249	pt
+table.inset.header_ink10.x	252	252	pt
+table.inset.header_ink11.x	257.5	257.5	pt
+table.bordered.text_lines	5	5	
+table.bordered.line0.top	11	11	pt
+table.bordered.line0.bottom	19	19	pt
+table.bordered.line0.leading	10	9.5	pt
+table.bordered.line1.top	36	36	pt
+table.bordered.line1.bottom	49	49	pt
+table.bordered.line1.leading	7	7	pt
+table.bordered.line2.top	60	60	pt
+table.bordered.line2.bottom	70	70	pt
+table.bordered.line2.leading	8	8	pt
+table.bordered.line3.top	84	84	pt
+table.bordered.line3.bottom	94.5	94.5	pt
+table.bordered.line3.leading	7	7	pt
+table.bordered.line4.top	108	108	pt
+table.bordered.line4.bottom	118	118	pt
+table.bordered.line4.leading	8	8	pt
+table.bordered.row_pitch	21	21	pt
+table.bordered.header_to_row_baseline	30	30	pt
+table.bordered.rule_count	21	23	
+table.bordered.rule0.y	0.5	0.5	pt
+table.bordered.rule0.colour	#E0E0E0	#3A3A3A	colour
+table.bordered.rule1.y	1	1	pt
+table.bordered.rule1.colour	#FFFFFF	#1E1E1E	colour
+table.bordered.rule2.y	27.5	27.5	pt
+table.bordered.rule2.colour	#F2F2F2	#2B2B2B	colour
+table.bordered.rule3.y	28	28	pt
+table.bordered.rule3.colour	#E5E5E5	#383838	colour
+table.bordered.rule4.y	29.5	28.5	pt
+table.bordered.rule4.colour	#F2F2F2	#333333	colour
+table.bordered.rule5.y	30	29	pt
+table.bordered.rule5.colour	#FFFFFF	#2E2E2E	colour
+table.bordered.rule6.y	52.5	29.5	pt
+table.bordered.rule6.colour	#FAFAFA	#262626	colour
+table.bordered.rule7.y	53	30	pt
+table.bordered.rule7.colour	#F4F5F5	#1E1E1E	colour
+table.bordered.rule8.y	76.5	52.5	pt
+table.bordered.rule8.colour	#FAFAFA	#242424	colour
+table.bordered.rule9.y	77	53	pt
+table.bordered.rule9.colour	#FFFFFF	#292929	colour
+table.bordered.rule10.y	100.5	76.5	pt
+table.bordered.rule10.colour	#FAFAFA	#242424	colour
+table.bordered.rule11.y	101	77	pt
+table.bordered.rule11.colour	#F4F5F5	#1E1E1E	colour
+table.bordered.rule12.y	124.5	100.5	pt
+table.bordered.rule12.colour	#FAFAFA	#242424	colour
+table.bordered.rule13.y	125	101	pt
+table.bordered.rule13.colour	#FFFFFF	#292929	colour
+table.bordered.header_fill	#FFFFFF	#1E1E1E	colour
+table.bordered.row0_fill	#FFFFFF	#1E1E1E	colour
+table.bordered.row1_fill	#F4F5F5	#292929	colour
+table.bordered.header_ink0.x	9.5	9.5	pt
+table.bordered.header_ink1.x	17	17	pt
+table.bordered.header_ink2.x	23.5	23.5	pt
+table.bordered.header_ink3.x	33	32.5	pt
+table.bordered.header_ink4.x	133.5	133.5	pt
+table.bordered.header_ink5.x	140.5	140.5	pt
+table.bordered.header_ink6.x	143.5	143	pt
+table.bordered.header_ink7.x	149.5	149.5	pt
+table.bordered.header_ink8.x	253	253	pt
+table.bordered.header_ink9.x	260	260	pt
+table.bordered.header_ink10.x	263	263	pt
+table.bordered.header_ink11.x	268.5	268.5	pt
+table.bordered_plain.text_lines	5	5	
+table.bordered_plain.line0.top	11	11	pt
+table.bordered_plain.line0.bottom	19	19	pt
+table.bordered_plain.line0.leading	10	9.5	pt
+table.bordered_plain.line1.top	36	36	pt
+table.bordered_plain.line1.bottom	49	49	pt
+table.bordered_plain.line1.leading	7	7	pt
+table.bordered_plain.line2.top	60	60	pt
+table.bordered_plain.line2.bottom	70	70	pt
+table.bordered_plain.line2.leading	8	8	pt
+table.bordered_plain.line3.top	84	84	pt
+table.bordered_plain.line3.bottom	94.5	94.5	pt
+table.bordered_plain.line3.leading	7	7	pt
+table.bordered_plain.line4.top	108	108	pt
+table.bordered_plain.line4.bottom	118	118	pt
+table.bordered_plain.line4.leading	8	8	pt
+table.bordered_plain.row_pitch	21	21	pt
+table.bordered_plain.header_to_row_baseline	30	30	pt
+table.bordered_plain.rule_count	25	27	
+table.bordered_plain.rule0.y	0.5	0.5	pt
+table.bordered_plain.rule0.colour	#E0E0E0	#3A3A3A	colour
+table.bordered_plain.rule1.y	1	1	pt
+table.bordered_plain.rule1.colour	#FFFFFF	#1E1E1E	colour
+table.bordered_plain.rule2.y	27.5	27.5	pt
+table.bordered_plain.rule2.colour	#F2F2F2	#2B2B2B	colour
+table.bordered_plain.rule3.y	28	28	pt
+table.bordered_plain.rule3.colour	#E5E5E5	#383838	colour
+table.bordered_plain.rule4.y	29.5	28.5	pt
+table.bordered_plain.rule4.colour	#F2F2F2	#333333	colour
+table.bordered_plain.rule5.y	30	29	pt
+table.bordered_plain.rule5.colour	#FFFFFF	#2E2E2E	colour
+table.bordered_plain.rule6.y	51.5	29.5	pt
+table.bordered_plain.rule6.colour	#F3F3F3	#262626	colour
+table.bordered_plain.rule7.y	52	30	pt
+table.bordered_plain.rule7.colour	#E6E6E6	#1E1E1E	colour
+table.bordered_plain.rule8.y	52.5	51.5	pt
+table.bordered_plain.rule8.colour	#F3F3F3	#292929	colour
+table.bordered_plain.rule9.y	53	52	pt
+table.bordered_plain.rule9.colour	#FFFFFF	#343434	colour
+table.bordered_plain.rule10.y	75.5	52.5	pt
+table.bordered_plain.rule10.colour	#F3F3F3	#292929	colour
+table.bordered_plain.rule11.y	76	53	pt
+table.bordered_plain.rule11.colour	#E6E6E6	#1E1E1E	colour
+table.bordered_plain.rule12.y	76.5	75.5	pt
+table.bordered_plain.rule12.colour	#F3F3F3	#292929	colour
+table.bordered_plain.rule13.y	77	76	pt
+table.bordered_plain.rule13.colour	#FFFFFF	#343434	colour
+table.bordered_plain.header_fill	#FFFFFF	#1E1E1E	colour
+table.bordered_plain.row0_fill	#FFFFFF	#1E1E1E	colour
+table.bordered_plain.row1_fill	#FFFFFF	#1E1E1E	colour
+table.bordered_plain.header_ink0.x	9.5	9.5	pt
+table.bordered_plain.header_ink1.x	17	17	pt
+table.bordered_plain.header_ink2.x	23.5	23.5	pt
+table.bordered_plain.header_ink3.x	33	32.5	pt
+table.bordered_plain.header_ink4.x	133.5	133.5	pt
+table.bordered_plain.header_ink5.x	140.5	140.5	pt
+table.bordered_plain.header_ink6.x	143.5	143	pt
+table.bordered_plain.header_ink7.x	149.5	149.5	pt
+table.bordered_plain.header_ink8.x	253	253	pt
+table.bordered_plain.header_ink9.x	260	260	pt
+table.bordered_plain.header_ink10.x	263	263	pt
+table.bordered_plain.header_ink11.x	268.5	268.5	pt
+table.inset_plain.text_lines	5	5	
+table.inset_plain.line0.top	10	10	pt
+table.inset_plain.line0.bottom	18	18	pt
+table.inset_plain.line0.leading	19	18.5	pt
+table.inset_plain.line1.top	40	40	pt
+table.inset_plain.line1.bottom	53	53	pt
+table.inset_plain.line1.leading	16	16	pt
+table.inset_plain.line2.top	64	64	pt
+table.inset_plain.line2.bottom	74	74	pt
+table.inset_plain.line2.leading	17	17	pt
+table.inset_plain.line3.top	88	88	pt
+table.inset_plain.line3.bottom	98.5	98.5	pt
+table.inset_plain.line3.leading	16	16	pt
+table.inset_plain.line4.top	112	112	pt
+table.inset_plain.line4.bottom	122	122	pt
+table.inset_plain.line4.leading	17	17	pt
+table.inset_plain.row_pitch	21	21	pt
+table.inset_plain.header_to_row_baseline	35	35	pt
+table.inset_plain.rule_count	20	22	
+table.inset_plain.rule0.y	26.5	26.5	pt
+table.inset_plain.rule0.colour	#F2F2F2	#2B2B2B	colour
+table.inset_plain.rule1.y	27	27	pt
+table.inset_plain.rule1.colour	#E5E5E5	#383838	colour
+table.inset_plain.rule2.y	28.5	27.5	pt
+table.inset_plain.rule2.colour	#F2F2F2	#333333	colour
+table.inset_plain.rule3.y	29	28	pt
+table.inset_plain.rule3.colour	#FFFFFF	#2E2E2E	colour
+table.inset_plain.rule4.y	55.5	28.5	pt
+table.inset_plain.rule4.colour	#F3F3F3	#262626	colour
+table.inset_plain.rule5.y	56	29	pt
+table.inset_plain.rule5.colour	#E6E6E6	#1E1E1E	colour
+table.inset_plain.rule6.y	56.5	55.5	pt
+table.inset_plain.rule6.colour	#F3F3F3	#292929	colour
+table.inset_plain.rule7.y	57	56	pt
+table.inset_plain.rule7.colour	#FFFFFF	#343434	colour
+table.inset_plain.rule8.y	79.5	56.5	pt
+table.inset_plain.rule8.colour	#F3F3F3	#292929	colour
+table.inset_plain.rule9.y	80	57	pt
+table.inset_plain.rule9.colour	#E6E6E6	#1E1E1E	colour
+table.inset_plain.rule10.y	80.5	79.5	pt
+table.inset_plain.rule10.colour	#F3F3F3	#292929	colour
+table.inset_plain.rule11.y	81	80	pt
+table.inset_plain.rule11.colour	#FFFFFF	#343434	colour
+table.inset_plain.rule12.y	103.5	80.5	pt
+table.inset_plain.rule12.colour	#F3F3F3	#292929	colour
+table.inset_plain.rule13.y	104	81	pt
+table.inset_plain.rule13.colour	#E6E6E6	#1E1E1E	colour
+table.inset_plain.header_fill	#FFFFFF	#1E1E1E	colour
+table.inset_plain.row0_fill	#FFFFFF	#1E1E1E	colour
+table.inset_plain.row1_fill	#FFFFFF	#1E1E1E	colour
+table.inset_plain.header_ink0.x	18.5	18.5	pt
+table.inset_plain.header_ink1.x	26	26	pt
+table.inset_plain.header_ink2.x	32.5	32.5	pt
+table.inset_plain.header_ink3.x	42	41.5	pt
+table.inset_plain.header_ink4.x	130.5	130.5	pt
+table.inset_plain.header_ink5.x	137.5	137.5	pt
+table.inset_plain.header_ink6.x	140.5	140	pt
+table.inset_plain.header_ink7.x	146.5	146.5	pt
+table.inset_plain.header_ink8.x	242	242	pt
+table.inset_plain.header_ink9.x	249	249	pt
+table.inset_plain.header_ink10.x	252	252	pt
+table.inset_plain.header_ink11.x	257.5	257.5	pt
+table.width.fixed.inset.header_ink0.x	18.5		pt
+table.width.fixed.inset.header_ink1.x	26		pt
+table.width.fixed.inset.header_ink2.x	32.5		pt
+table.width.fixed.inset.header_ink3.x	42		pt
+table.width.fixed.inset.header_ink4.x	115.5		pt
+table.width.fixed.inset.header_ink5.x	122.5		pt
+table.width.fixed.inset.header_ink6.x	125.5		pt
+table.width.fixed.inset.header_ink7.x	131.5		pt
+table.width.fixed.inset.header_ink8.x	252		pt
+table.width.fixed.inset.header_ink9.x	259		pt
+table.width.fixed.inset.header_ink10.x	262		pt
+table.width.fixed.inset.header_ink11.x	267.5		pt
+table.width.fixed.bordered.header_ink0.x	9.5		pt
+table.width.fixed.bordered.header_ink1.x	17		pt
+table.width.fixed.bordered.header_ink2.x	23.5		pt
+table.width.fixed.bordered.header_ink3.x	33		pt
+table.width.fixed.bordered.header_ink4.x	106.5		pt
+table.width.fixed.bordered.header_ink5.x	113.5		pt
+table.width.fixed.bordered.header_ink6.x	116.5		pt
+table.width.fixed.bordered.header_ink7.x	122.5		pt
+table.width.fixed.bordered.header_ink8.x	243		pt
+table.width.fixed.bordered.header_ink9.x	250		pt
+table.width.fixed.bordered.header_ink10.x	253		pt
+table.width.fixed.bordered.header_ink11.x	258.5		pt
+table.width.range.inset.header_ink0.x	18.5		pt
+table.width.range.inset.header_ink1.x	26		pt
+table.width.range.inset.header_ink2.x	32.5		pt
+table.width.range.inset.header_ink3.x	42		pt
+table.width.range.inset.header_ink4.x	152.5		pt
+table.width.range.inset.header_ink5.x	159.5		pt
+table.width.range.inset.header_ink6.x	162.5		pt
+table.width.range.inset.header_ink7.x	168.5		pt
+table.width.range.inset.header_ink8.x	286		pt
+table.width.range.inset.header_ink9.x	293		pt
+table.width.range.inset.header_ink10.x	296		pt
+table.width.range.inset.header_ink11.x	301.5		pt
+table.width.range.bordered.header_ink0.x	9.5		pt
+table.width.range.bordered.header_ink1.x	17		pt
+table.width.range.bordered.header_ink2.x	23.5		pt
+table.width.range.bordered.header_ink3.x	33		pt
+table.width.range.bordered.header_ink4.x	166.5		pt
+table.width.range.bordered.header_ink5.x	173.5		pt
+table.width.range.bordered.header_ink6.x	176.5		pt
+table.width.range.bordered.header_ink7.x	182.5		pt
+table.width.range.bordered.header_ink8.x	295		pt
+table.width.range.bordered.header_ink9.x	302		pt
+table.width.range.bordered.header_ink10.x	305		pt
+table.width.range.bordered.header_ink11.x	310.5		pt
+table.width.two.inset.header_ink0.x	18.5		pt
+table.width.two.inset.header_ink1.x	26		pt
+table.width.two.inset.header_ink2.x	32.5		pt
+table.width.two.inset.header_ink3.x	42		pt
+table.width.two.inset.header_ink4.x	191.5		pt
+table.width.two.inset.header_ink5.x	198.5		pt
+table.width.two.inset.header_ink6.x	201.5		pt
+table.width.two.inset.header_ink7.x	207.5		pt
+table.width.two.bordered.header_ink0.x	9.5		pt
+table.width.two.bordered.header_ink1.x	17		pt
+table.width.two.bordered.header_ink2.x	23.5		pt
+table.width.two.bordered.header_ink3.x	33		pt
+table.width.two.bordered.header_ink4.x	193.5		pt
+table.width.two.bordered.header_ink5.x	200.5		pt
+table.width.two.bordered.header_ink6.x	203.5		pt
+table.width.two.bordered.header_ink7.x	209.5		pt
+table.width.two.bordered.header_ink8.x	358.5		pt
+table.headers_hidden.line0.top	12		pt
+table.headers_hidden.line0.bottom	25		pt
+table.headers_hidden.line1.top	36		pt
+table.headers_hidden.line1.bottom	46		pt
+table.headers_hidden.line2.top	60		pt
+table.headers_hidden.line2.bottom	70.5		pt
+table.headers_hidden.line3.top	84		pt
+table.headers_hidden.line3.bottom	94		pt
+table.sort.indicator.x	157		pt
+table.sort.indicator.width	7		pt
+table.sort.indicator.height	4		pt
+table.sort.indicator.colour	#7F7F7F		colour
+list.badge_prominence.decreased.ink_trailing_gap	21		pt
+list.badge_prominence.decreased.ink_height	8.5		pt
+list.badge_prominence.decreased.ink_width	6		pt
+list.badge_prominence.decreased.ink	#848484		colour
+list.badge_prominence.standard.ink_trailing_gap	21		pt
+list.badge_prominence.standard.ink_height	8.5		pt
+list.badge_prominence.standard.ink_width	6		pt
+list.badge_prominence.standard.ink	#848484		colour
+list.badge_prominence.increased.ink_trailing_gap	16		pt
+list.badge_prominence.increased.ink_height	17		pt
+list.badge_prominence.increased.ink_width	18		pt
+list.badge_prominence.increased.ink	#FF383C		colour
+list.bordered_style.plain.line0.top	8		pt
+list.bordered_style.plain.line0.leading	7		pt
+list.bordered_style.plain.row0_fill	#FFFFFF		colour
+list.bordered_style.plain.line1.top	32		pt
+list.bordered_style.plain.line1.leading	8		pt
+list.bordered_style.plain.row1_fill	#FFFFFF		colour
+list.bordered_style.plain.line2.top	56		pt
+list.bordered_style.plain.line2.leading	7		pt
+list.bordered_style.plain.row2_fill	#FFFFFF		colour
+list.bordered_style.plain.edge	#C0C0C0		colour
+list.bordered_style.alternating.line0.top	8		pt
+list.bordered_style.alternating.line0.leading	7		pt
+list.bordered_style.alternating.row0_fill	#FFFFFF		colour
+list.bordered_style.alternating.line1.top	32		pt
+list.bordered_style.alternating.line1.leading	8		pt
+list.bordered_style.alternating.row1_fill	#F4F5F5		colour
+list.bordered_style.alternating.line2.top	56		pt
+list.bordered_style.alternating.line2.leading	7		pt
+list.bordered_style.alternating.row2_fill	#FFFFFF		colour
+list.bordered_style.alternating.edge	#C0C0C0		colour

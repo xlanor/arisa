@@ -1,0 +1,18 @@
+#	os macOS Version 27.0 (Build 26A428)
+#	accent multicolor (default)
+#	render_scale 2
+#	main_screen_scale 1
+key	light	dark	unit
+dialog.suppression.title	Don’t ask again	Don’t ask again	text
+dialog.suppression.height_added	32	32	pt
+dialog.suppression.toggle_height	16	16	pt
+dialog.suppression.toggle_below_buttons	0	0	bool
+dialog.suppression.toggle_leading	22	22	pt
+dialog.critical.icon_size	64	64	pt
+dialog.critical.icon_top	20	20	pt
+inspector.default.width	270	270	pt
+inspector.default.content_width	706	706	pt
+inspector.fixed_300.width	300	300	pt
+inspector.fixed_300.content_width	676	676	pt
+help.initial_delay_default_set	0	0	bool
+help.initial_delay	0	0	ms

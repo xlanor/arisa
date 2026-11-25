@@ -1,0 +1,14 @@
+#	os macOS Version 27.0 (Build 26A428)
+#	accent multicolor (default)
+#	render_scale 2
+#	main_screen_scale 1
+key	light	dark	unit
+accessibility.sort_priority	First|Inner high|Inner low|Third	First|Inner high|Inner low|Third	
+accessibility.label_content	Inbox, 3 unread	Inbox, 3 unread	
+accessibility.combine	12, files	12, files	
+accessibility.actions	Move|Flag|Archive	Move|Flag|Archive	
+accessibility.children	North|South	North|South	
+accessibility.sort_priority_inside	High|Low	High|Low	
+accessibility.sort_priority_contained	High|Low	High|Low	
+accessibility.action_order	Delta|Charlie|Alpha|Bravo	Delta|Charlie|Alpha|Bravo	
+accessibility.representation	Volume	Volume	

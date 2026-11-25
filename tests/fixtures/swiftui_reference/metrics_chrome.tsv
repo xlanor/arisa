@@ -1,0 +1,39 @@
+#	os macOS Version 27.0 (Build 26A428)
+#	accent multicolor (default)
+#	render_scale 2
+#	main_screen_scale 1
+key	light	dark	unit
+chrome.toolbar.bar_height	52	52	pt
+chrome.toolbar.title_size	15	15	pt
+chrome.toolbar.title_weight	700	700	
+chrome.toolbar.title_leading_from_platter	10	10	pt
+chrome.toolbar.platter_height	36	36	pt
+chrome.toolbar.platter_top_inset	8	8	pt
+chrome.toolbar.platter_radius	18	18	pt
+chrome.toolbar.platter_gap	8	8	pt
+chrome.toolbar.group_item_spacing	0	0	pt
+chrome.toolbar.group_items	2	2	count
+chrome.toolbar.group_width	73	73	pt
+chrome.toolbar.platter_padding_leading	0	0	pt
+chrome.toolbar.platter_padding_trailing	0	0	pt
+chrome.toolbar.icon_item_width	36	36	pt
+chrome.toolbar.item_height	36	36	pt
+chrome.toolbar.text_item_width	80	80	pt
+chrome.toolbar.text_item_padding	6.5	6.5	pt
+chrome.sidebar.width	144	144	pt
+chrome.sidebar.glass_inset_offscreen	0	0	pt
+chrome.sidebar.glass_radius_offscreen	0	0	pt
+chrome.sidebar.header_row_height	19	19	pt
+chrome.sidebar.row_height	32	32	pt
+chrome.sidebar.row_pitch	32	32	pt
+chrome.sidebar.header_leading	14	14	pt
+chrome.sidebar.selection_inset	10	10	pt
+chrome.sidebar.selection_height	32	32	pt
+chrome.sidebar.selection_radius	8	8	pt
+chrome.sidebar.cell_leading	16	16	pt
+chrome.sidebar.icon_leading	20	20	pt
+chrome.sidebar.icon_width	19	19	pt
+chrome.sidebar.icon_height	16	16	pt
+chrome.sidebar.label_leading	45	45	pt
+chrome.sidebar.icon_label_gap	6	6	pt
+chrome.window.corner_radius_offscreen	16	16	pt

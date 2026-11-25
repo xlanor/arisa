@@ -1,0 +1,65 @@
+#	os macOS Version 27.0 (Build 26A428)
+#	accent multicolor (default)
+#	render_scale 2
+#	main_screen_scale 1
+key	light	dark	unit
+type.line_height.default	72	72	pt
+type.line_height.normal	72	72	pt
+type.line_height.variable	72	72	pt
+type.line_height.tight	60	60	pt
+type.line_height.loose	90	90	pt
+type.line_height.multiple_1_5	90	90	pt
+type.line_height.leading_4	72	72	pt
+type.line_height.exact_30	90	90	pt
+type.line_height.single_exact_30	30	30	pt
+type.line_height.single_default	24	24	pt
+type.leading.standard	72	72	pt
+type.leading.body_standard	48	48	pt
+type.leading.body_single_standard	16	16	pt
+type.leading.title_standard	78	78	pt
+type.leading.tight	72	72	pt
+type.leading.body_tight	44	44	pt
+type.leading.body_single_tight	16	16	pt
+type.leading.title_tight	74	74	pt
+type.leading.loose	72	72	pt
+type.leading.body_loose	52	52	pt
+type.leading.body_single_loose	16	16	pt
+type.leading.title_loose	82	82	pt
+type.small_caps.cap_height	29	29	pt
+type.small_caps.cap_width	24	24	pt
+type.small_caps.lower_small_height	23	23	pt
+type.small_caps.lower_small_width	20	20	pt
+type.small_caps.upper_small_height	23	23	pt
+type.small_caps.upper_small_width	20	20	pt
+type.small_caps.both_height	23	23	pt
+type.small_caps.both_width	43	43	pt
+type.small_caps.word_plain	98	98	pt
+type.small_caps.word_small	102	102	pt
+type.small_caps.word_lower	106	106	pt
+type.pattern.solid.segments	1	1	count
+type.pattern.solid.lengths	202	202	pt
+type.pattern.solid.gaps			pt
+type.pattern.dot.segments	17	17	count
+type.pattern.dot.lengths	6 6 6 6 6 6	6 6 6 6 6 6	pt
+type.pattern.dot.gaps	6 6 6 6 6 6	6 6 6 6 6 6	pt
+type.pattern.dash.segments	7	7	count
+type.pattern.dash.lengths	20 20 20 20 20 20	20 20 20 20 20 20	pt
+type.pattern.dash.gaps	10 10 10 10 10 10	10 10 10 10 10 10	pt
+type.pattern.dash_dot.segments	11	11	count
+type.pattern.dash_dot.lengths	20 6 20 6 20 6	20 6 20 6 20 6	pt
+type.pattern.dash_dot.gaps	6 6 6 6 6 6	6 6 6 6 6 6	pt
+type.pattern.dash_dot_dot.segments	13	13	count
+type.pattern.dash_dot_dot.lengths	20 6 6 20 6 6	20 6 6 20 6 6	pt
+type.pattern.dash_dot_dot.gaps	6 6 6 6 6 6	6 6 6 6 6 6	pt
+type.runs.mixed_size_height	40	40	pt
+type.runs.small_height	20	20	pt
+type.runs.big_height	40	40	pt
+type.runs.kern_width	79	79	pt
+type.runs.plain_width	55	55	pt
+type.runs.raised_height	26	26	pt
+type.runs.concat_height	26	26	pt
+type.runs.title_height	26	26	pt
+type.inline.symbol_text_width	61	61	pt
+type.inline.plain_width	35	35	pt
+type.inline.symbol_height	25	25	pt
+type.inline.text_height	24	24	pt

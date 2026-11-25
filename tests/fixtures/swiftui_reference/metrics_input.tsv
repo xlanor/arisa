@@ -1,0 +1,12 @@
+#	os macOS Version 27.0 (Build 26A428)
+#	accent multicolor (default)
+#	render_scale 2
+#	main_screen_scale 1
+key	light	dark	unit
+input.inspector_range.width	270		pt
+input.split_range.sidebar_width	160		pt
+input.split_divider_thin	1	1	pt
+input.split_divider_pane	10	10	pt
+input.double_click_interval	500	500	ms
+input.key_repeat_delay	500	500	ms
+input.key_repeat_interval	83.333	83.333	ms

@@ -1,0 +1,46 @@
+#	os macOS Version 27.0 (Build 26A428)
+#	accent multicolor (default)
+#	render_scale 2
+#	main_screen_scale 1
+key	light	dark	unit
+rich_text.width.standard	85	85	pt
+rich_text.width.compressed	59	59	pt
+rich_text.width.condensed	69	69	pt
+rich_text.width.expanded	106	106	pt
+rich_text.scale.body.width	82	82	pt
+rich_text.scale.body.secondary_width	72	72	pt
+rich_text.scale.body.height	16	16	pt
+rich_text.scale.body.secondary_height	16	16	pt
+rich_text.scale.title.width	129	129	pt
+rich_text.scale.title.secondary_width	108	108	pt
+rich_text.scale.title.height	26	26	pt
+rich_text.scale.title.secondary_height	26	26	pt
+rich_text.scale.caption.width	65	65	pt
+rich_text.scale.caption.secondary_width	58	58	pt
+rich_text.scale.caption.height	13	13	pt
+rich_text.scale.caption.secondary_height	13	13	pt
+rich_text.decoration.height	24	24	pt
+rich_text.decoration.underline_top	21	21	pt
+rich_text.decoration.underline_thickness	2	2	pt
+rich_text.decoration.strikethrough_top	13	13	pt
+rich_text.decoration.strikethrough_thickness	2	2	pt
+rich_text.decoration.underline_colour	#FFB0B2		colour
+rich_text.decoration.underline_default_colour	#AAAAAA		colour
+rich_text.face.plain_word	69	69	pt
+rich_text.face.italic_word	70	70	pt
+rich_text.face.monospaced_iii	25	25	pt
+rich_text.face.monospaced_WWW	25	25	pt
+rich_text.face.design_monospaced_iii	25	25	pt
+rich_text.face.design_serif_word	72	72	pt
+rich_text.face.design_rounded_word	67	67	pt
+rich_text.face.custom_missing_word	66	66	pt
+rich_text.markdown.bold	30	30	pt
+rich_text.markdown.plain_bold	30	30	pt
+rich_text.markdown.code	33	33	pt
+rich_text.markdown.monospaced_code	33	33	pt
+rich_text.markdown.unmatched	25	25	pt
+rich_text.markdown.literal_unmatched	25	25	pt
+rich_text.concat.joined	88	88	pt
+rich_text.concat.parts	90	90	pt
+rich_text.markdown.link_colour	#0067D9		colour
+rich_text.markdown.link_underline_rows	4	4	rows

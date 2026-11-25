@@ -1,0 +1,41 @@
+#	os macOS Version 27.0 (Build 26A428)
+#	accent multicolor (default)
+#	render_scale 2
+#	main_screen_scale 1
+key	light	dark	unit
+label.default.icon_to_title	8		pt
+label.default.title_x	25		pt
+label.default.icon_width	17		pt
+label.default.width	52		pt
+label.spacing12.icon_to_title	12		pt
+label.spacing12.title_x	29		pt
+label.spacing12.icon_width	17		pt
+label.spacing12.width	56		pt
+label.reserved40.icon_to_title	19.5		pt
+label.reserved40.title_x	48		pt
+label.reserved40.icon_width	17		pt
+label.reserved40.width	75		pt
+button.automatic.width	55		pt
+button.automatic.height	24		pt
+button.automatic.label_x	12		pt
+button.automatic.label_y	4		pt
+button.accessory_bar.width	55		pt
+button.accessory_bar.height	24		pt
+button.accessory_bar.label_x	12		pt
+button.accessory_bar.label_y	4		pt
+button.accessory_bar_action.width	55		pt
+button.accessory_bar_action.height	24		pt
+button.accessory_bar_action.label_x	12		pt
+button.accessory_bar_action.label_y	4		pt
+button.link.width	31		pt
+button.link.height	16		pt
+button.link.label_x	0		pt
+button.link.label_y	0		pt
+picker.segmented.three.width	180		pt
+picker.segmented.three.height	24		pt
+picker.tabs.three.width	195		pt
+picker.tabs.three.height	24		pt
+slider.plain.height	16		pt
+slider.ticks.height	18		pt
+slider.tick_labels.height	31		pt
+slider.thumbless.height	16		pt

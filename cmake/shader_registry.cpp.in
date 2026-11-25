@@ -1,0 +1,15 @@
+#include <arisa/graphics/shader.hpp>
+
+#include <vector>
+
+namespace arisa::graphics {
+
+auto ShaderLibrary::registered() -> std::span<const ShaderFunction> {
+  static const std::vector<ShaderFunction> functions{
+$<JOIN:$<TARGET_PROPERTY:arisa_effect_registry,ARISA_EFFECT_ENTRIES>,
+>
+  };
+  return functions;
+}
+
+}

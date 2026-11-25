@@ -1,0 +1,118 @@
+#	os macOS Version 27.0 (Build 26A428)
+#	accent multicolor (default)
+#	render_scale 2
+#	main_screen_scale 1
+key	light	dark	unit
+animators.logical.default	0.5	0.5	s
+animators.removed.default	0.607	0.607	s
+animators.logical.spring	0.5	0.5	s
+animators.removed.spring	0.607	0.607	s
+animators.logical.smooth	0.5	0.5	s
+animators.removed.smooth	0.607	0.607	s
+animators.logical.snappy	-1	-1	s
+animators.removed.snappy	0.437	0.437	s
+animators.logical.bouncy	0.5	0.5	s
+animators.removed.bouncy	0.577	0.577	s
+animators.logical.spring_duration_1_bounce_0_5	1	1	s
+animators.removed.spring_duration_1_bounce_0_5	1.494	1.494	s
+animators.logical.spring_response_0_3_damping_0_6	0.3	0.3	s
+animators.removed.spring_response_0_3_damping_0_6	0.344	0.344	s
+animators.logical.ease_in_out	-1	-1	s
+animators.removed.ease_in_out	0.35	0.35	s
+animators.logical.linear_0_5	-1	-1	s
+animators.removed.linear_0_5	0.5	0.5	s
+animators.logical.ease_out_delay_0_2	-1	-1	s
+animators.removed.ease_out_delay_0_2	0.5	0.5	s
+animators.logical.linear_0_2_speed_2	-1	-1	s
+animators.removed.linear_0_2_speed_2	0.1	0.1	s
+animators.logical.linear_0_2_repeat_3	-1	-1	s
+animators.removed.linear_0_2_repeat_3	0.6	0.6	s
+animators.phases.linear_0_2_repeating.0.phase	0	0	
+animators.phases.linear_0_2_repeating.0.at	0.001	0.001	s
+animators.phases.linear_0_2_repeating.1.phase	1	1	
+animators.phases.linear_0_2_repeating.1.at	0.002	0.002	s
+animators.phases.linear_0_2_repeating.2.phase	2	2	
+animators.phases.linear_0_2_repeating.2.at	0.203	0.203	s
+animators.phases.linear_0_2_repeating.3.phase	0	0	
+animators.phases.linear_0_2_repeating.3.at	0.403	0.403	s
+animators.phases.linear_0_2_repeating.4.phase	1	1	
+animators.phases.linear_0_2_repeating.4.at	0.603	0.603	s
+animators.phases.linear_0_2_repeating.5.phase	2	2	
+animators.phases.linear_0_2_repeating.5.at	0.803	0.803	s
+animators.phases.linear_0_2_repeating.6.phase	0	0	
+animators.phases.linear_0_2_repeating.6.at	1.003	1.003	s
+animators.phases.linear_0_2_repeating.7.phase	1	1	
+animators.phases.linear_0_2_repeating.7.at	1.203	1.203	s
+animators.phases.linear_0_2_repeating.count	9	9	
+animators.phases.linear_0_2_triggered.0.phase	0	0	
+animators.phases.linear_0_2_triggered.0.at	0	0	s
+animators.phases.linear_0_2_triggered.1.phase	1	1	
+animators.phases.linear_0_2_triggered.1.at	0.001	0.001	s
+animators.phases.linear_0_2_triggered.2.phase	2	2	
+animators.phases.linear_0_2_triggered.2.at	0.202	0.202	s
+animators.phases.linear_0_2_triggered.3.phase	0	0	
+animators.phases.linear_0_2_triggered.3.at	0.402	0.402	s
+animators.phases.linear_0_2_triggered.count	4	4	
+animators.phases.spring_0_3_repeating.0.phase	0	0	
+animators.phases.spring_0_3_repeating.0.at	0.002	0.002	s
+animators.phases.spring_0_3_repeating.1.phase	1	1	
+animators.phases.spring_0_3_repeating.1.at	0.002	0.002	s
+animators.phases.spring_0_3_repeating.2.phase	2	2	
+animators.phases.spring_0_3_repeating.2.at	0.303	0.303	s
+animators.phases.spring_0_3_repeating.3.phase	0	0	
+animators.phases.spring_0_3_repeating.3.at	0.57	0.57	s
+animators.phases.spring_0_3_repeating.4.phase	1	1	
+animators.phases.spring_0_3_repeating.4.at	0.87	0.87	s
+animators.phases.spring_0_3_repeating.5.phase	2	2	
+animators.phases.spring_0_3_repeating.5.at	1.137	1.137	s
+animators.phases.spring_0_3_repeating.6.phase	0	0	
+animators.phases.spring_0_3_repeating.6.at	1.407	1.407	s
+animators.phases.spring_0_3_repeating.count	7	7	
+animators.blur_replace.down_up.insert.25.centre_alpha	0.251	0.251	
+animators.blur_replace.down_up.insert.25.peak_alpha	0.251	0.251	
+animators.blur_replace.down_up.insert.25.half_width	93	93	pt
+animators.blur_replace.down_up.insert.25.ramp_width	0	0	pt
+animators.blur_replace.down_up.insert.50.centre_alpha	0.502	0.502	
+animators.blur_replace.down_up.insert.50.peak_alpha	0.502	0.502	
+animators.blur_replace.down_up.insert.50.half_width	95	95	pt
+animators.blur_replace.down_up.insert.50.ramp_width	0	0	pt
+animators.blur_replace.down_up.insert.75.centre_alpha	0.749	0.749	
+animators.blur_replace.down_up.insert.75.peak_alpha	0.749	0.749	
+animators.blur_replace.down_up.insert.75.half_width	97	97	pt
+animators.blur_replace.down_up.insert.75.ramp_width	1	1	pt
+animators.blur_replace.down_up.remove.25.centre_alpha	0.749	0.749	
+animators.blur_replace.down_up.remove.25.peak_alpha	0.749	0.749	
+animators.blur_replace.down_up.remove.25.half_width	97	97	pt
+animators.blur_replace.down_up.remove.25.ramp_width	1	1	pt
+animators.blur_replace.down_up.remove.50.centre_alpha	0.502	0.502	
+animators.blur_replace.down_up.remove.50.peak_alpha	0.502	0.502	
+animators.blur_replace.down_up.remove.50.half_width	95	95	pt
+animators.blur_replace.down_up.remove.50.ramp_width	0	0	pt
+animators.blur_replace.down_up.remove.75.centre_alpha	0.251	0.251	
+animators.blur_replace.down_up.remove.75.peak_alpha	0.251	0.251	
+animators.blur_replace.down_up.remove.75.half_width	93	93	pt
+animators.blur_replace.down_up.remove.75.ramp_width	0	0	pt
+animators.blur_replace.up_up.insert.25.centre_alpha	0.251	0.251	
+animators.blur_replace.up_up.insert.25.peak_alpha	0.251	0.251	
+animators.blur_replace.up_up.insert.25.half_width	93	93	pt
+animators.blur_replace.up_up.insert.25.ramp_width	0	0	pt
+animators.blur_replace.up_up.insert.50.centre_alpha	0.502	0.502	
+animators.blur_replace.up_up.insert.50.peak_alpha	0.502	0.502	
+animators.blur_replace.up_up.insert.50.half_width	95	95	pt
+animators.blur_replace.up_up.insert.50.ramp_width	0	0	pt
+animators.blur_replace.up_up.insert.75.centre_alpha	0.749	0.749	
+animators.blur_replace.up_up.insert.75.peak_alpha	0.749	0.749	
+animators.blur_replace.up_up.insert.75.half_width	97	97	pt
+animators.blur_replace.up_up.insert.75.ramp_width	1	1	pt
+animators.blur_replace.up_up.remove.25.centre_alpha	0.749	0.749	
+animators.blur_replace.up_up.remove.25.peak_alpha	0.749	0.749	
+animators.blur_replace.up_up.remove.25.half_width	102	102	pt
+animators.blur_replace.up_up.remove.25.ramp_width	0	0	pt
+animators.blur_replace.up_up.remove.50.centre_alpha	0.502	0.502	
+animators.blur_replace.up_up.remove.50.peak_alpha	0.502	0.502	
+animators.blur_replace.up_up.remove.50.half_width	105	105	pt
+animators.blur_replace.up_up.remove.50.ramp_width	0	0	pt
+animators.blur_replace.up_up.remove.75.centre_alpha	0.251	0.251	
+animators.blur_replace.up_up.remove.75.peak_alpha	0.251	0.251	
+animators.blur_replace.up_up.remove.75.half_width	108	108	pt
+animators.blur_replace.up_up.remove.75.ramp_width	1	1	pt

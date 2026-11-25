@@ -1,0 +1,52 @@
+#	os macOS Version 27.0 (Build 26A428)
+#	accent multicolor (default)
+#	render_scale 2
+#	main_screen_scale 1
+key	light	dark	unit
+split.automatic.columns	3		count
+split.automatic.sidebar_width	144		pt
+split.automatic.content_width	200		pt
+split.automatic.content_x	144		pt
+split.automatic.detail_x	345		pt
+split.automatic.detail_width	679		pt
+split.balanced.columns	3		count
+split.balanced.sidebar_width	144		pt
+split.balanced.content_width	200		pt
+split.balanced.content_x	144		pt
+split.balanced.detail_x	345		pt
+split.balanced.detail_width	679		pt
+split.prominent_detail.columns	3		count
+split.prominent_detail.sidebar_width	144		pt
+split.prominent_detail.content_width	200		pt
+split.prominent_detail.content_x	144		pt
+split.prominent_detail.detail_x	345		pt
+split.prominent_detail.detail_width	679		pt
+split.content_300.columns	3		count
+split.content_300.sidebar_width	144		pt
+split.content_300.content_width	300		pt
+split.content_300.content_x	144		pt
+split.content_300.detail_x	445		pt
+split.content_300.detail_width	579		pt
+safe_area_inset.default.content_height	252		pt
+safe_area_inset.default.spacing	8		pt
+safe_area_inset.default.bar_width	200		pt
+safe_area_inset.spacing_10.content_height	250		pt
+safe_area_inset.trailing.bar_x	150		pt
+safe_area_inset.leading.content_width	150		pt
+safe_area_inset.leading.bar_height	300		pt
+safe_area_inset.scroll.first_row_y	0		pt
+safe_area_inset.scroll.scroll_height	260		pt
+safe_area_bar.default.content_height	260		pt
+safe_area_bar.default.spacing	0		pt
+navigation.subtitle.title_size	13	13	pt
+navigation.subtitle.title_y	11	11	pt
+navigation.subtitle.size	11	11	pt
+navigation.subtitle.weight	400	400	
+navigation.subtitle.y	27	27	pt
+navigation.subtitle.gap	0	0	pt
+toolbar.spacer.platters	2	2	count
+toolbar.spacer.fixed_gap	8	8	pt
+picker.tabs.regular.width	195		pt
+picker.tabs.regular.height	24		pt
+picker.tabs.segmented_width	180		pt
+picker.tabs.segmented_height	24		pt

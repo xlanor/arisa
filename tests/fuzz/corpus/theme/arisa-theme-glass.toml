@@ -1,0 +1,48 @@
+schema = 1
+name = "arisa-theme-glass"
+extends = "default"
+accent = "#CDDC28"
+
+[colours]
+scrim = "#00000052"
+link = { light = "#29597A", dark = "#7FB2D4" }
+
+[radii]
+control = 12
+card = 18
+sheet = 28
+continuous = true
+
+[spacing]
+xxs = 2
+xs = 4
+sm = 8
+md = 12
+lg = 16
+xl = 20
+xxl = 24
+
+[glass]
+sidebar = { variant = "regular", tint = "#00000033" }
+toolbar = { variant = "clear" }
+sheet = { variant = "regular", tint = "#00000033" }
+control = { variant = "clear" }
+panel = { variant = "regular", tint = "#00000033" }
+
+[liquid_glass]
+refraction = 10
+rim = 0.36
+blur = 14
+clear_blur = 5
+highlight = 1.0
+tint = { light = "#FFFFFF3D", dark = "#00000033" }
+
+[materials]
+ultra_thin = { blur = 12, saturation = 1.6, tint = { light = "#FFFFFF38", dark = "#1C1C1E47" }, luminosity = { light = 0.02, dark = -0.02 }, noise = 0.015 }
+thin = { blur = 18, saturation = 1.7, tint = { light = "#FFFFFF5C", dark = "#1C1C1E6B" }, luminosity = { light = 0.02, dark = -0.02 }, noise = 0.015 }
+regular = { blur = 24, saturation = 1.8, tint = { light = "#F2F2F785", dark = "#1C1C1E94" }, luminosity = { light = 0.02, dark = -0.02 }, noise = 0.015 }
+thick = { blur = 30, saturation = 1.8, tint = { light = "#F2F2F7AD", dark = "#1C1C1EB8" }, luminosity = { light = 0.02, dark = -0.02 }, noise = 0.015 }
+ultra_thick = { blur = 40, saturation = 1.9, tint = { light = "#F2F2F7D1", dark = "#1C1C1ED6" }, luminosity = { light = 0.02, dark = -0.02 }, noise = 0.015 }
+sidebar = { blur = 30, saturation = 2.0, tint = { light = "#F5F5F794", dark = "#26262A9E" }, luminosity = { light = 0.03, dark = -0.03 }, noise = 0.015 }
+menu = { blur = 28, saturation = 1.8, tint = { light = "#FFFFFFB8", dark = "#2C2C2EBD" }, luminosity = { light = 0.02, dark = -0.02 }, noise = 0.015 }
+hud = { blur = 30, saturation = 1.6, tint = { light = "#1C1C1E94", dark = "#1C1C1EA3" }, luminosity = { light = 0.0, dark = 0.0 }, noise = 0.015 }

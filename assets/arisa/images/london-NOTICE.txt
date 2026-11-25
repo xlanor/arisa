@@ -1,0 +1,6 @@
+london_1920.jpg and london_1280.jpg
+
+Title: Drone Shot of London (Westminster from the river)
+Source: https://www.pexels.com/photo/drone-shot-of-london-16771428/
+Licence: free to use (Pexels licence, CC0-style), attribution given here.
+Changes: cropped to 16:9 and resized to 1920x1080 and 1280x720, JPEG quality 82.

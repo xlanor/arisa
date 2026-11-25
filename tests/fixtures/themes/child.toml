@@ -1,0 +1,11 @@
+schema = 1
+name = "child"
+extends = "base"
+
+[colours]
+label = { light = "#102030", dark = "#E0E0F0" }
+separator = "#80808080"
+
+[glass]
+sidebar = { variant = "clear", tint = "accent", interactive = true }
+toolbar = false

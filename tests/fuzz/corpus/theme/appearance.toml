@@ -1,0 +1,13 @@
+schema = 1
+theme = "child"
+color_scheme = "dark"
+accent = "#AF52DE"
+dynamic_type_size = "accessibility3"
+reduce_motion = true
+reduce_transparency = true
+increase_contrast = true
+sidebar = "icons_only"
+
+[ui_scale]
+handheld = 1.4
+docked = 1.1

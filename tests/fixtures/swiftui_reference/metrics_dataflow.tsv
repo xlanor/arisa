@@ -1,0 +1,31 @@
+#	os macOS Version 27.0 (Build 26A428)
+#	accent multicolor (default)
+#	render_scale 2
+#	main_screen_scale 1
+key	light	dark	unit
+preference.outer_over_inner	2	2	value
+preference.sibling_order	[1, 2]	[1, 2]	value
+preference.silent_sibling	5	5	value
+preference.initial_calls	1	1	count
+preference.initial_value	3	3	value
+preference.unset_calls	0	0	count
+preference.transform	11	11	value
+preference.transform_without_value	10	10	value
+environment.transform_after_outer	6	6	value
+environment.transform_before_inner	5	5	value
+environment.display_scale	1	1	x
+environment.pixel_length	1	1	pt
+environment.control_size	regular	regular	value
+environment.is_focused	false	false	value
+anchor.bounds_x	7	7	pt
+anchor.bounds_y	47	47	pt
+anchor.bounds_width	40	40	pt
+anchor.bounds_height	20	20	pt
+anchor.target_x	7	7	pt
+anchor.target_y	47	47	pt
+link.width	69	69	pt
+link.height	16	16	pt
+link.ink	#046ADA	#3F99FB	colour
+link.borderless_width	69	69	pt
+link.borderless_height	16	16	pt
+link.borderless_ink	#828282	#999999	colour

@@ -1,0 +1,41 @@
+#	os macOS Version 27.0 (Build 26A428)
+#	accent multicolor (default)
+#	render_scale 2
+#	main_screen_scale 1
+key	light	dark	unit
+disabled.text.enabled_ink	#2C2C2C	#DCDCDC	colour
+disabled.text.disabled_ink	#2C2C2C	#DCDCDC	colour
+disabled.text.ink_ratio	1	1	
+disabled.rectangle.enabled_ink	#FF383C	#FF4245	colour
+disabled.rectangle.disabled_ink	#FF383C	#FF4245	colour
+disabled.rectangle.ink_ratio	1	1	
+disabled.image.enabled_ink	#FF373C	#FF4245	colour
+disabled.image.disabled_ink	#FF373C	#FF4245	colour
+disabled.image.ink_ratio	1	1	
+disabled.stack_of_text.enabled_ink	#2C2C2C	#DCDCDC	colour
+disabled.stack_of_text.disabled_ink	#2C2C2C	#DCDCDC	colour
+disabled.stack_of_text.ink_ratio	1	1	
+disabled.button_automatic.enabled_ink	#292929	#DEDEDE	colour
+disabled.button_automatic.disabled_ink	#B8B8B8	#5D5D5D	colour
+disabled.button_automatic.ink_ratio	0.332	0.326	
+disabled.button_plain.enabled_ink	#2C2C2C	#DCDCDC	colour
+disabled.button_plain.disabled_ink	#959595	#7D7D7D	colour
+disabled.button_plain.ink_ratio	0.502	0.502	
+disabled.button_borderless.enabled_ink	#838383	#999999	colour
+disabled.button_borderless.disabled_ink	#C1C1C1	#565656	colour
+disabled.button_borderless.ink_ratio	0.5	0.46	
+disabled.button_custom_ignoring.enabled_ink	#2C0A0A	#FFE1E2	colour
+disabled.button_custom_ignoring.disabled_ink	#2C0A0A	#FFE1E2	colour
+disabled.button_custom_ignoring.ink_ratio	1	1	
+disabled.button_custom_reading.enabled_ink	#2C0A0A	#FFE1E2	colour
+disabled.button_custom_reading.disabled_ink	#955A5C	#BF8889	colour
+disabled.button_custom_reading.ink_ratio	0.629	0.617	
+disabled.button_custom_label_image.enabled_ink	#FF373B	#FF4346	colour
+disabled.button_custom_label_image.disabled_ink	#FF373B	#FF4346	colour
+disabled.button_custom_label_image.ink_ratio	1	1	
+disabled.toggle_custom_ignoring.enabled_ink	#2C2C2C	#DCDCDC	colour
+disabled.toggle_custom_ignoring.disabled_ink	#2C2C2C	#DCDCDC	colour
+disabled.toggle_custom_ignoring.ink_ratio	1	1	
+disabled.label_in_plain_button.enabled_ink	#2C2C2C	#DCDCDC	colour
+disabled.label_in_plain_button.disabled_ink	#959595	#7D7D7D	colour
+disabled.label_in_plain_button.ink_ratio	0.502	0.502	

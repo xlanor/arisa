@@ -1,0 +1,100 @@
+#	os macOS Version 27.0 (Build 26A428)
+#	accent multicolor (default)
+#	render_scale 2
+#	main_screen_scale 1
+key	light	dark	unit
+list.badge.count.ink_trailing_gap	21	21	pt
+list.badge.count.ink_height	7	8	pt
+list.badge.count.ink_width	5	5.5	pt
+list.badge.count.ink	#848484	#989898	colour
+list.badge.count.row_width	268	268	pt
+list.badge.text.ink_trailing_gap	21	20.5	pt
+list.badge.text.ink_height	7	7.5	pt
+list.badge.text.ink_width	20	21	pt
+list.badge.text.ink	#828282	#999999	colour
+list.badge.text.row_width	268	268	pt
+list.badge.zero.ink_width	0	0	pt
+list.badge.zero.row_width	268	268	pt
+list.separator.default.count	3	3	
+list.separator.default.line0.after_row	0	0	
+list.separator.default.line0.colour	#F3F3F3	#292929	colour
+list.separator.default.line1.after_row	1	1	
+list.separator.default.line1.colour	#F3F3F3	#292929	colour
+list.separator.default.line2.after_row	2	2	
+list.separator.default.line2.colour	#F3F3F3	#292929	colour
+list.separator.default.leading	15.5	15.5	pt
+list.separator.default.trailing_gap	16.5	16.5	pt
+list.separator.default.text_leading	16	16	pt
+list.separator.hidden_all.count	1	1	
+list.separator.hidden_all.line0.after_row	2	2	
+list.separator.hidden_all.line0.colour	#F3F3F3	#292929	colour
+list.separator.hidden_top.count	2	2	
+list.separator.hidden_top.line0.after_row	1	1	
+list.separator.hidden_top.line0.colour	#F3F3F3	#292929	colour
+list.separator.hidden_top.line1.after_row	2	2	
+list.separator.hidden_top.line1.colour	#F3F3F3	#292929	colour
+list.separator.hidden_bottom.count	2	2	
+list.separator.hidden_bottom.line0.after_row	0	0	
+list.separator.hidden_bottom.line0.colour	#F3F3F3	#292929	colour
+list.separator.hidden_bottom.line1.after_row	2	2	
+list.separator.hidden_bottom.line1.colour	#F3F3F3	#292929	colour
+list.separator.tint_all.count	2	2	
+list.separator.tint_all.line0.after_row	0	0	
+list.separator.tint_all.line0.colour	#FF9C9E	#8F3031	colour
+list.separator.tint_all.line1.after_row	2	2	
+list.separator.tint_all.line1.colour	#FF9C9E	#8F3031	colour
+list.separator.tint_top.count	2	2	
+list.separator.tint_top.line0.after_row	0	0	
+list.separator.tint_top.line0.colour	#FF9C9E	#8F3031	colour
+list.separator.tint_top.line1.after_row	2	2	
+list.separator.tint_top.line1.colour	#F3F3F3	#292929	colour
+list.separator.tint_bottom.count	2	2	
+list.separator.tint_bottom.line0.after_row	0	0	
+list.separator.tint_bottom.line0.colour	#F3F3F3	#292929	colour
+list.separator.tint_bottom.line1.after_row	1	1	
+list.separator.tint_bottom.line1.colour	#FF9C9E	#8F3031	colour
+list.row_background.x	50.5	50.5	pt
+list.row_background.width	249.5	249.5	pt
+list.row_background.height	23	23	pt
+list.row_background.row_height	16	16	pt
+list.row_background.colour	#FF383C	#FF4245	colour
+list.prominence.standard.header_ink_height	8	9	pt
+list.prominence.standard.header_ink_width	38.5	39	pt
+list.prominence.standard.header_leading	17	17	pt
+list.prominence.standard.header_to_row_baseline	40	40	pt
+list.prominence.standard.header_colour	#838383	#989898	colour
+list.prominence.increased.header_ink_height	8	9	pt
+list.prominence.increased.header_ink_width	38.5	39	pt
+list.prominence.increased.header_leading	17	17	pt
+list.prominence.increased.header_to_row_baseline	40	40	pt
+list.prominence.increased.header_colour	#838383	#989898	colour
+disclosure.collapsed.height	24	24	pt
+disclosure.collapsed.label_x	11.5	11.5	pt
+disclosure.collapsed.label_height	16	16	pt
+disclosure.collapsed.chevron_x	2	2	pt
+disclosure.collapsed.chevron_width	5	5	pt
+disclosure.collapsed.chevron_height	7.5	8.5	pt
+disclosure.collapsed.chevron	#C3C3C3	#F1F1F1	colour
+disclosure.expanded.height	40	40	pt
+disclosure.expanded.label_x	11.5	11.5	pt
+disclosure.expanded.label_height	16	16	pt
+disclosure.expanded.chevron_x	0	0	pt
+disclosure.expanded.chevron_width	8	8	pt
+disclosure.expanded.chevron_height	4.5	6	pt
+disclosure.expanded.chevron	#C3C3C3	#F0F0F0	colour
+disclosure.expanded.child_x	94	94	pt
+disclosure.expanded.child_y	4	4	pt
+outline.root_x	25	25	pt
+outline.leaf_x	-12	-12	pt
+outline.leaf_present	0	0	
+list.insets.plain_x	16		pt
+list.insets.inset_x	56		pt
+list.insets.plain_height	16		pt
+list.insets.inset_height	16		pt
+list.insets.row_pitch	30		pt
+list.min_row_height.default.row_pitch	21		pt
+list.min_row_height.60.row_pitch	57		pt
+list.alternating.alpha	#FFFFFF		colour
+list.alternating.bravo	#F4F5F5		colour
+list.alternating.charlie	#FFFFFF		colour
+list.alternating.delta	#F4F5F5		colour

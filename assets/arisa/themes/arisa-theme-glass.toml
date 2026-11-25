@@ -1,0 +1,62 @@
+schema = 1
+name = "arisa-theme-glass"
+extends = "default"
+
+[colours]
+scrim = "#00000052"
+link = { light = "#29597A", dark = "#7FB2D4" }
+
+[radii]
+control = 12
+card = 18
+sheet = 28
+continuous = true
+
+[spacing]
+xxs = 2
+xs = 4
+sm = 8
+md = 12
+lg = 16
+xl = 20
+xxl = 24
+
+[metrics]
+toolbar_horizontal_padding = 6.5
+toolbar_group_height = 36
+toolbar_group_padding = 0
+toolbar_group_spacing = 0
+toolbar_group_inset = 8
+toolbar_group_gap = 8
+sidebar_panel_inset = 8
+sidebar_panel_radius = 18
+
+[glass]
+sidebar = { variant = "regular" }
+toolbar = { variant = "regular" }
+sheet = { variant = "regular" }
+control = { variant = "clear" }
+panel = { variant = "regular" }
+
+[liquid_glass]
+refraction = 43
+rim = 0.3
+blur = 4.6
+clear_blur = 1.0
+highlight = 1.0
+shadow_opacity = 0.09
+shadow_blur = 28
+shadow_offset = 2
+ambient_opacity = 0.04
+ambient_blur = 4
+tint = { light = "#FFFFFF89", dark = "#3D3D3D80" }
+
+[materials]
+ultra_thin = { blur = 12, saturation = 1.3, tint = { light = "#FFFFFF38", dark = "#1D1D1D47" }, luminosity = { light = 0.02, dark = -0.02 }, noise = 0.015 }
+thin = { blur = 18, saturation = 1.35, tint = { light = "#FFFFFF5C", dark = "#1D1D1D6B" }, luminosity = { light = 0.02, dark = -0.02 }, noise = 0.015 }
+regular = { blur = 24, saturation = 1.4, tint = { light = "#F4F4F485", dark = "#1D1D1D94" }, luminosity = { light = 0.02, dark = -0.02 }, noise = 0.015 }
+thick = { blur = 30, saturation = 1.4, tint = { light = "#F4F4F4AD", dark = "#1D1D1DB8" }, luminosity = { light = 0.02, dark = -0.02 }, noise = 0.015 }
+ultra_thick = { blur = 40, saturation = 1.45, tint = { light = "#F4F4F4D1", dark = "#1D1D1DD6" }, luminosity = { light = 0.02, dark = -0.02 }, noise = 0.015 }
+sidebar = { blur = 30, saturation = 1.45, tint = { light = "#F5F5F594", dark = "#2727279E" }, luminosity = { light = 0.03, dark = -0.03 }, noise = 0.015 }
+menu = { blur = 28, saturation = 1.4, tint = { light = "#FFFFFFB8", dark = "#2D2D2DBD" }, luminosity = { light = 0.02, dark = -0.02 }, noise = 0.015 }
+hud = { blur = 30, saturation = 1.3, tint = { light = "#1D1D1D94", dark = "#1D1D1DA3" }, luminosity = { light = 0.0, dark = 0.0 }, noise = 0.015 }

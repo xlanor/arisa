@@ -1,0 +1,216 @@
+{
+  "version": 6,
+  "cmakeMinimumRequired": {
+    "major": 3,
+    "minor": 28,
+    "patch": 0
+  },
+  "configurePresets": [
+    {
+      "name": "host-debug",
+      "displayName": "Host debug (g++-16, ccache)",
+      "generator": "Ninja",
+      "binaryDir": "${sourceDir}/build/host-debug",
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Debug",
+        "CMAKE_C_COMPILER": "/opt/homebrew/bin/gcc-16",
+        "CMAKE_CXX_COMPILER": "/opt/homebrew/bin/g++-16",
+        "ARISA_BUILD_TESTS": "ON",
+        "ARISA_UNITY_BUILD": "OFF",
+        "CMAKE_C_FLAGS_DEBUG": "-g -Og",
+        "CMAKE_CXX_FLAGS_DEBUG": "-g -Og",
+        "CMAKE_C_COMPILER_LAUNCHER": "/opt/homebrew/bin/ccache;base_dir=${sourceDir};hash_dir=false;sloppiness=pch_defines,time_macros,include_file_mtime,include_file_ctime",
+        "CMAKE_CXX_COMPILER_LAUNCHER": "/opt/homebrew/bin/ccache;base_dir=${sourceDir};hash_dir=false;sloppiness=pch_defines,time_macros,include_file_mtime,include_file_ctime"
+      }
+    },
+    {
+      "name": "host-asan",
+      "displayName": "Host ASan + UBSan (g++-16)",
+      "inherits": "host-debug",
+      "binaryDir": "${sourceDir}/build/host-asan",
+      "cacheVariables": {
+        "CMAKE_C_FLAGS": "-fsanitize=address -fno-omit-frame-pointer",
+        "CMAKE_CXX_FLAGS": "-fsanitize=address,undefined -fno-omit-frame-pointer -fno-sanitize-recover=all",
+        "CMAKE_EXE_LINKER_FLAGS": "-fsanitize=address,undefined",
+        "ARISA_UNITY_BUILD": "ON",
+        "CMAKE_C_FLAGS_DEBUG": "-g -O1",
+        "CMAKE_CXX_FLAGS_DEBUG": "-g -O1"
+      }
+    },
+    {
+      "name": "host-check",
+      "displayName": "Host debug without unity batches, shared with host-debug",
+      "inherits": "host-debug",
+      "binaryDir": "${sourceDir}/build/host-debug",
+      "cacheVariables": {
+        "ARISA_UNITY_BUILD": "OFF"
+      }
+    },
+    {
+      "name": "host-stack",
+      "displayName": "Host -O2 stack census (g++-16, -fstack-usage)",
+      "inherits": "host-debug",
+      "binaryDir": "${sourceDir}/build/host-stack",
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Release",
+        "CMAKE_CXX_FLAGS": "-fstack-usage -Wno-error=maybe-uninitialized",
+        "ARISA_STACK_USAGE_LIMIT": "1073741824",
+        "ARISA_BUILD_TESTS": "OFF"
+      }
+    },
+    {
+      "name": "host-tsan",
+      "displayName": "Host TSan (Homebrew clang with GCC 16 libstdc++)",
+      "inherits": "host-debug",
+      "binaryDir": "${sourceDir}/build/host-tsan",
+      "cacheVariables": {
+        "CMAKE_C_COMPILER": "/opt/homebrew/opt/llvm/bin/clang",
+        "CMAKE_CXX_COMPILER": "/opt/homebrew/opt/llvm/bin/clang++",
+        "CMAKE_C_FLAGS": "-fsanitize=thread -fno-omit-frame-pointer",
+        "CMAKE_CXX_FLAGS": "-fsanitize=thread -fno-omit-frame-pointer -fc++-abi=aarch64 -nostdinc++ -isystem /opt/homebrew/opt/gcc/include/c++/16 -isystem /opt/homebrew/opt/gcc/include/c++/16/aarch64-apple-darwin27",
+        "CMAKE_EXE_LINKER_FLAGS": "-fsanitize=thread -nostdlib++ -L/opt/homebrew/opt/gcc/lib/gcc/current -lstdc++ -Wl,-rpath,/opt/homebrew/opt/gcc/lib/gcc/current",
+        "CMAKE_SHARED_LINKER_FLAGS": "-fsanitize=thread -nostdlib++ -L/opt/homebrew/opt/gcc/lib/gcc/current -lstdc++ -Wl,-rpath,/opt/homebrew/opt/gcc/lib/gcc/current",
+        "ARISA_UNITY_BUILD": "ON",
+        "CMAKE_C_FLAGS_DEBUG": "-g -O1",
+        "CMAKE_CXX_FLAGS_DEBUG": "-g -O1"
+      }
+    },
+    {
+      "name": "host-fuzz",
+      "displayName": "Host libFuzzer + ASan/UBSan (Homebrew clang with GCC 16 libstdc++)",
+      "inherits": "host-debug",
+      "binaryDir": "${sourceDir}/build/host-fuzz",
+      "cacheVariables": {
+        "CMAKE_C_COMPILER": "/opt/homebrew/opt/llvm/bin/clang",
+        "CMAKE_CXX_COMPILER": "/opt/homebrew/opt/llvm/bin/clang++",
+        "CMAKE_C_FLAGS": "-fsanitize=fuzzer-no-link,address,undefined -fno-sanitize-recover=all -fno-omit-frame-pointer",
+        "CMAKE_CXX_FLAGS": "-fsanitize=fuzzer-no-link,address,undefined -fno-sanitize-recover=all -fno-omit-frame-pointer -fc++-abi=aarch64 -nostdinc++ -isystem /opt/homebrew/opt/gcc/include/c++/16 -isystem /opt/homebrew/opt/gcc/include/c++/16/aarch64-apple-darwin27",
+        "CMAKE_EXE_LINKER_FLAGS": "-fsanitize=address,undefined -nostdlib++ -L/opt/homebrew/opt/gcc/lib/gcc/current -lstdc++ -Wl,-rpath,/opt/homebrew/opt/gcc/lib/gcc/current",
+        "ARISA_BUILD_TESTS": "OFF",
+        "ARISA_BUILD_EXAMPLES": "OFF",
+        "ARISA_BUILD_FUZZERS": "ON",
+        "ARISA_PROVIDERS_SDL3": "OFF",
+        "ARISA_UNITY_BUILD": "ON",
+        "CMAKE_C_FLAGS_DEBUG": "-g -O1",
+        "CMAKE_CXX_FLAGS_DEBUG": "-g -O1"
+      }
+    },
+    {
+      "name": "nx",
+      "displayName": "Nintendo Switch 1 (devkitA64, libnx, deko3d)",
+      "generator": "Ninja",
+      "binaryDir": "${sourceDir}/build/nx",
+      "toolchainFile": "/opt/devkitpro/cmake/Switch.cmake",
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Release",
+        "ARISA_BUILD_TESTS": "OFF",
+        "ARISA_BUILD_CONFORMANCE_NRO": "ON",
+        "ARISA_INSPECTOR": "ON",
+        "ARISA_PROVIDERS_SDL3": "OFF",
+        "ARISA_UNITY_BUILD": "ON",
+        "CMAKE_C_COMPILER_LAUNCHER": "ccache",
+        "CMAKE_CXX_COMPILER_LAUNCHER": "ccache"
+      }
+    },
+    {
+      "name": "switch",
+      "displayName": "Alias of nx, kept for one release",
+      "inherits": "nx"
+    },
+    {
+      "name": "ounce",
+      "displayName": "Nintendo Switch 2 (devkitA64, libounce, OunceVK)",
+      "generator": "Ninja",
+      "binaryDir": "${sourceDir}/build/ounce",
+      "toolchainFile": "/opt/devkitpro/libounce/cmake/Switch2.cmake",
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Release",
+        "ARISA_BUILD_TESTS": "OFF",
+        "ARISA_BUILD_EXAMPLES": "ON",
+        "ARISA_BUILD_CONFORMANCE_NRO": "ON",
+        "ARISA_INSPECTOR": "ON",
+        "ARISA_PROVIDERS_SDL3": "OFF",
+        "ARISA_UNITY_BUILD": "ON",
+        "CMAKE_C_COMPILER_LAUNCHER": "ccache",
+        "CMAKE_CXX_COMPILER_LAUNCHER": "ccache"
+      }
+    },
+    {
+      "name": "ounce-drako",
+      "displayName": "Nintendo Switch 2 (devkitA64, libounce, drako3d)",
+      "generator": "Ninja",
+      "binaryDir": "${sourceDir}/build/ounce-drako",
+      "toolchainFile": "/opt/devkitpro/libounce/cmake/Switch2.cmake",
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Release",
+        "ARISA_BUILD_TESTS": "OFF",
+        "ARISA_BUILD_EXAMPLES": "ON",
+        "ARISA_BUILD_CONFORMANCE_NRO": "ON",
+        "ARISA_INSPECTOR": "ON",
+        "ARISA_PROVIDERS_SDL3": "OFF",
+        "ARISA_UNITY_BUILD": "ON",
+        "CMAKE_C_COMPILER_LAUNCHER": "ccache",
+        "CMAKE_CXX_COMPILER_LAUNCHER": "ccache",
+        "ARISA_HORIZON_GPU": "drako3d",
+        "ARISA_PROVIDERS_VULKAN": "OFF"
+      }
+    },
+    {
+      "name": "package-host",
+      "displayName": "Host release package (merged libarisa.a)",
+      "generator": "Ninja",
+      "binaryDir": "${sourceDir}/build/package-host",
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Release",
+        "ARISA_BUNDLE": "ON",
+        "ARISA_DEBUG_INFO": "ON",
+        "ARISA_BUILD_TESTS": "OFF",
+        "ARISA_BUILD_EXAMPLES": "OFF",
+        "ARISA_PROVIDERS_SDL3": "ON",
+        "ARISA_UNITY_BUILD": "ON",
+        "CMAKE_INSTALL_PREFIX": "${sourceDir}/build/package-host/install"
+      }
+    },
+    {
+      "name": "package-switch",
+      "displayName": "Nintendo Switch release package (merged libarisa.a)",
+      "generator": "Ninja",
+      "binaryDir": "${sourceDir}/build/package-switch",
+      "toolchainFile": "/opt/devkitpro/cmake/Switch.cmake",
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Release",
+        "ARISA_BUNDLE": "ON",
+        "ARISA_DEBUG_INFO": "ON",
+        "ARISA_BUILD_TESTS": "OFF",
+        "ARISA_BUILD_EXAMPLES": "OFF",
+        "ARISA_BUILD_CONFORMANCE_NRO": "OFF",
+        "ARISA_PROVIDERS_SDL3": "OFF",
+        "ARISA_UNITY_BUILD": "ON",
+        "CMAKE_C_COMPILER_LAUNCHER": "ccache",
+        "CMAKE_CXX_COMPILER_LAUNCHER": "ccache",
+        "CMAKE_INSTALL_PREFIX": "${sourceDir}/build/package-switch/install"
+      }
+    },
+    {
+      "name": "package-switch2",
+      "displayName": "Nintendo Switch 2 release package (merged libarisa.a, Vulkan and drako3d chosen at start-up)",
+      "generator": "Ninja",
+      "binaryDir": "${sourceDir}/build/package-switch2",
+      "toolchainFile": "/opt/devkitpro/libounce/cmake/Switch2.cmake",
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Release",
+        "ARISA_BUNDLE": "ON",
+        "ARISA_DEBUG_INFO": "ON",
+        "ARISA_BUILD_TESTS": "OFF",
+        "ARISA_BUILD_EXAMPLES": "OFF",
+        "ARISA_BUILD_CONFORMANCE_NRO": "OFF",
+        "ARISA_PROVIDERS_SDL3": "OFF",
+        "ARISA_UNITY_BUILD": "ON",
+        "CMAKE_C_COMPILER_LAUNCHER": "ccache",
+        "CMAKE_CXX_COMPILER_LAUNCHER": "ccache",
+        "CMAKE_INSTALL_PREFIX": "${sourceDir}/build/package-switch2/install",
+        "ARISA_HORIZON_GPU": "both"
+      }
+    }
+  ]
+}

@@ -1,0 +1,250 @@
+name: release
+
+on:
+  push:
+    tags:
+      - "v*"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: release-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  version:
+    runs-on: ubuntu-24.04
+    outputs:
+      version: ${{ steps.read.outputs.version }}
+    steps:
+      - uses: actions/checkout@v4
+      - id: read
+        name: Read the project version
+        run: |
+          version="$(sed -n 's/^project.arisa VERSION \([0-9.]*\).*/\1/p' CMakeLists.txt)"
+          test -n "$version"
+          echo "version=$version" >> "$GITHUB_OUTPUT"
+      - name: Match the tag to the project version
+        if: startsWith(github.ref, 'refs/tags/v')
+        env:
+          VERSION: ${{ steps.read.outputs.version }}
+        run: |
+          if [ "${GITHUB_REF_NAME#v}" != "$VERSION" ]; then
+            echo "tag $GITHUB_REF_NAME does not match project(arisa VERSION $VERSION)"
+            exit 1
+          fi
+
+  switch:
+    needs: version
+    runs-on: ubuntu-24.04
+    env:
+      SWITCH_BASE_IMAGE: switch-ui-devkita64:r30-gcc16.1
+      DEVKITA64_IMAGE: ${{ vars.ARISA_DEVKITA64_IMAGE }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: docker/setup-buildx-action@v3
+      - name: Pull the published devkitA64 image
+        if: env.DEVKITA64_IMAGE != ''
+        run: |
+          docker pull "$DEVKITA64_IMAGE"
+          docker tag "$DEVKITA64_IMAGE" "$SWITCH_BASE_IMAGE"
+      - name: Build the pinned devkitA64 image
+        if: env.DEVKITA64_IMAGE == ''
+        uses: docker/build-push-action@v6
+        with:
+          context: toolchain
+          tags: ${{ env.SWITCH_BASE_IMAGE }}
+          load: true
+          cache-from: type=gha,scope=devkita64-r30-gcc16.1
+          cache-to: type=gha,mode=max,scope=devkita64-r30-gcc16.1
+      - name: Check the toolchain pin
+        run: docker run --rm "$SWITCH_BASE_IMAGE" sh -c '/opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc -dumpversion | grep -qx 16.1.0'
+      - uses: actions/cache@v4
+        with:
+          path: build/.ccache-switch
+          key: ccache-switch-${{ github.sha }}
+          restore-keys: ccache-switch-
+      - run: make package TARGET=switch
+      - run: make package-check TARGET=switch
+      - uses: actions/upload-artifact@v4
+        with:
+          name: arisa-switch
+          path: |
+            build/package/arisa-*.tar.gz
+            build/package/arisa-*.tar.gz.sha256
+          if-no-files-found: error
+
+  switch2:
+    needs: version
+    if: vars.ARISA_OUNCE_IMAGE != '' || vars.ARISA_OUNCE_SDK_URL != ''
+    runs-on: ubuntu-24.04
+    env:
+      SWITCH_BASE_IMAGE: switch-ui-devkita64:r30-gcc16.1
+      DEVKITA64_IMAGE: ${{ vars.ARISA_DEVKITA64_IMAGE }}
+      OUNCE_PUBLISHED_IMAGE: ${{ vars.ARISA_OUNCE_IMAGE }}
+      OUNCE_SDK_URL: ${{ vars.ARISA_OUNCE_SDK_URL }}
+      OUNCE_SDK_TOKEN: ${{ secrets.ARISA_OUNCE_SDK_TOKEN }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: docker/setup-buildx-action@v3
+      - id: names
+        name: Read the ounce image name from the Makefile
+        run: |
+          sdk="$(sed -n 's/^OUNCE_SDK_VERSION := //p' Makefile)"
+          test -n "$sdk"
+          echo "image=switch-ui-devkita64:r30-gcc16.1-ounce$sdk" >> "$GITHUB_OUTPUT"
+      - name: Pull the published ounce image
+        if: env.OUNCE_PUBLISHED_IMAGE != ''
+        env:
+          OUNCE_IMAGE: ${{ steps.names.outputs.image }}
+        run: |
+          docker pull "$OUNCE_PUBLISHED_IMAGE"
+          docker tag "$OUNCE_PUBLISHED_IMAGE" "$OUNCE_IMAGE"
+      - name: Pull the published devkitA64 image
+        if: env.OUNCE_PUBLISHED_IMAGE == '' && env.DEVKITA64_IMAGE != ''
+        run: |
+          docker pull "$DEVKITA64_IMAGE"
+          docker tag "$DEVKITA64_IMAGE" "$SWITCH_BASE_IMAGE"
+      - name: Build the pinned devkitA64 image
+        if: env.OUNCE_PUBLISHED_IMAGE == '' && env.DEVKITA64_IMAGE == ''
+        uses: docker/build-push-action@v6
+        with:
+          context: toolchain
+          tags: ${{ env.SWITCH_BASE_IMAGE }}
+          load: true
+          cache-from: type=gha,scope=devkita64-r30-gcc16.1
+          cache-to: type=gha,mode=max,scope=devkita64-r30-gcc16.1
+      - name: Fetch the ounce SDK archive
+        if: env.OUNCE_PUBLISHED_IMAGE == ''
+        run: |
+          mkdir -p "$RUNNER_TEMP/ounce-sdk"
+          if [ -n "$OUNCE_SDK_TOKEN" ]; then
+            curl -fsSL -H "Authorization: Bearer $OUNCE_SDK_TOKEN" "$OUNCE_SDK_URL" -o "$RUNNER_TEMP/ounce-sdk/ounce-sdk.tar.xz"
+          else
+            curl -fsSL "$OUNCE_SDK_URL" -o "$RUNNER_TEMP/ounce-sdk/ounce-sdk.tar.xz"
+          fi
+      - name: Build the ounce image, checking the SDK against its pinned sha256
+        if: env.OUNCE_PUBLISHED_IMAGE == ''
+        run: make ounce-image OUNCE_SDK_DIR="$RUNNER_TEMP/ounce-sdk"
+      - name: Check the toolchain pin and the SDK
+        env:
+          OUNCE_IMAGE: ${{ steps.names.outputs.image }}
+        run: docker run --rm "$OUNCE_IMAGE" sh -c '/opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc -dumpversion | grep -qx 16.1.0 && test -f /opt/devkitpro/libounce/cmake/Switch2.cmake'
+      - uses: actions/cache@v4
+        with:
+          path: build/.ccache-ounce
+          key: ccache-ounce-${{ github.sha }}
+          restore-keys: ccache-ounce-
+      - run: make package TARGET=switch2
+      - run: make package-check TARGET=switch2
+      - uses: actions/upload-artifact@v4
+        with:
+          name: arisa-switch2
+          path: |
+            build/package/arisa-*.tar.gz
+            build/package/arisa-*.tar.gz.sha256
+          if-no-files-found: error
+
+  macos:
+    needs: version
+    runs-on: macos-15
+    env:
+      HOMEBREW_NO_AUTO_UPDATE: "1"
+      HOMEBREW_NO_INSTALL_CLEANUP: "1"
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install GCC 16, SDL3 and the build tools
+        run: |
+          brew install gcc cmake ninja ccache sdl3 glslang
+          test -x /opt/homebrew/bin/g++-16
+          /opt/homebrew/bin/g++-16 --version
+      - uses: actions/cache@v4
+        with:
+          path: ~/Library/Caches/ccache
+          key: ccache-macos-${{ github.sha }}
+          restore-keys: ccache-macos-
+      - run: make package TARGET=macos
+      - run: make package-check TARGET=macos PACKAGE_OFFSCREEN=0
+      - uses: actions/upload-artifact@v4
+        with:
+          name: arisa-macos
+          path: |
+            build/package/arisa-*.tar.gz
+            build/package/arisa-*.tar.gz.sha256
+          if-no-files-found: error
+
+  linux:
+    needs: version
+    runs-on: ubuntu-24.04
+    container: gcc:16
+    env:
+      CCACHE_DIR: ${{ github.workspace }}/.ccache
+    steps:
+      - name: Install SDL3 and the build tools
+        run: |
+          apt-get update
+          apt-get install -y --no-install-recommends cmake ninja-build ccache python3 git libsdl3-dev glslang-tools
+      - uses: actions/checkout@v4
+      - uses: actions/cache@v4
+        with:
+          path: .ccache
+          key: ccache-linux-${{ github.sha }}
+          restore-keys: ccache-linux-
+      - run: make package TARGET=linux CC_HOST=gcc CXX_HOST=g++
+      - run: make package-check TARGET=linux CC_HOST=gcc CXX_HOST=g++ PACKAGE_OFFSCREEN=0
+      - uses: actions/upload-artifact@v4
+        with:
+          name: arisa-linux
+          path: |
+            build/package/arisa-*.tar.gz
+            build/package/arisa-*.tar.gz.sha256
+          if-no-files-found: error
+
+  release:
+    needs: [version, switch, switch2, macos, linux]
+    if: >-
+      !cancelled() &&
+      needs.version.result == 'success' &&
+      needs.switch.result == 'success' &&
+      needs.macos.result == 'success' &&
+      needs.linux.result == 'success' &&
+      (needs.switch2.result == 'success' || needs.switch2.result == 'skipped')
+    runs-on: ubuntu-24.04
+    permissions:
+      contents: write
+    env:
+      ARCHIVES: ${{ needs.switch2.result == 'success' && 4 || 3 }}
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: arisa-*
+          path: dist
+          merge-multiple: true
+      - name: Verify the archives and write SHA256SUMS
+        working-directory: dist
+        run: |
+          for sum in *.tar.gz.sha256; do sha256sum -c "$sum"; done
+          releases="$(ls *.tar.gz | grep -v -- '-debug\.tar\.gz$')"
+          test "$(echo "$releases" | wc -l)" -eq "$ARCHIVES"
+          test "$(ls *-debug.tar.gz | wc -l)" -eq "$ARCHIVES"
+          for archive in $releases; do test -f "${archive%.tar.gz}-debug.tar.gz"; done
+          sha256sum *.tar.gz > SHA256SUMS
+          cat SHA256SUMS
+      - uses: actions/upload-artifact@v4
+        with:
+          name: release-${{ needs.version.outputs.version }}
+          path: |
+            dist/*.tar.gz
+            dist/SHA256SUMS
+      - name: Create the GitHub release
+        if: startsWith(github.ref, 'refs/tags/v')
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release create "$GITHUB_REF_NAME" dist/*.tar.gz dist/SHA256SUMS \
+            --repo "$GITHUB_REPOSITORY" \
+            --title "arisa $GITHUB_REF_NAME" \
+            --generate-notes \
+            --verify-tag

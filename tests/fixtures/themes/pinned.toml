@@ -1,0 +1,14 @@
+schema = 1
+name = "pinned"
+extends = "default"
+
+[type.large_title]
+weight = "semibold"
+tracking = -0.4
+
+[type.headline]
+weight = 650
+tracking = -0.2
+
+[preferences]
+color_scheme = "dark"

@@ -1,0 +1,28 @@
+#	os macOS Version 27.0 (Build 26A428)
+#	accent multicolor (default)
+#	render_scale 2
+#	main_screen_scale 1
+key	light	dark	unit
+scroll.anchor.bottom.last_row_gap	0		pt
+scroll.anchor.bottom.first_row_y	-400		pt
+scroll.anchor.bottom.short.last_row_gap	0		pt
+scroll.anchor.bottom.short.first_row_y	110		pt
+scroll.anchor.alignment.short.first_row_y	110		pt
+scroll.anchor.initial_offset.short.first_row_y	0		pt
+scroll.anchor.none.short.first_row_y	0		pt
+scroll.cross_axis.child_x	100		pt
+scroll.free.text_width	364		pt
+scroll.free.text_height	16		pt
+scroll.vertical.text_width	190		pt
+scroll.vertical.text_height	32		pt
+scroll.content_background.automatic.fill	#FFFFFF	#1E1E1E	colour
+scroll.content_background.automatic.fill_alpha	#FFFFFF	#1E1E1E	colour
+scroll.content_background.visible.fill	#FFFFFF	#1E1E1E	colour
+scroll.content_background.visible.fill_alpha	#FFFFFF	#1E1E1E	colour
+scroll.content_background.hidden.fill	#FFFFFF	#1E1E1E	colour
+scroll.content_background.hidden.fill_alpha	#000000@0%	#000000@0%	colour
+scroll.content_background.editor_hidden.fill_alpha	#000000@0%	#000000@0%	colour
+scroll.content_background.editor_default.fill_alpha	#000000@0%	#000000@0%	colour
+search.navigation.first_ink_y	17		pt
+search.appkit.field_height	24		pt
+search.appkit.field_ink_height	24.5		pt

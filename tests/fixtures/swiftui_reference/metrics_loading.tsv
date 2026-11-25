@@ -1,0 +1,196 @@
+#	os macOS Version 27.0 (Build 26A428)
+#	accent multicolor (default)
+#	render_scale 2
+#	main_screen_scale 1
+key	light	dark	unit
+redacted.text.frame_width	101	101	pt
+redacted.text.frame_height	16	16	pt
+redacted.text.plain_width	99	99	pt
+redacted.text.bar_x	0	0	pt
+redacted.text.bar_y	3	2.5	pt
+redacted.text.bar_width	101	101	pt
+redacted.text.bar_height	10.5	11	pt
+redacted.text.bar_fill	#DCDCDC	#3D3D3D	colour
+redacted.text.bar_fill_alpha	#000000@14%	#FFFFFF@14%	colour
+redacted.text.bar_radius	3.447	4.19	pt
+redacted.text.plain_ink_y	3	3	pt
+redacted.text.plain_ink_height	10.5	10.5	pt
+redacted.wrapped.frame_height	32	32	pt
+redacted.wrapped.bars	2	2	
+redacted.wrapped.bar0.y	3	3	pt
+redacted.wrapped.bar0.width	150	150	pt
+redacted.wrapped.bar0.height	10.5	10.5	pt
+redacted.wrapped.bar1.y	19	19	pt
+redacted.wrapped.bar1.width	126	126	pt
+redacted.wrapped.bar1.height	10.5	10.5	pt
+redacted.title.frame_height	26	26	pt
+redacted.title.bar_y	4.5	4	pt
+redacted.title.bar_height	17	17.5	pt
+redacted.title.bar_radius	4.796	4.126	pt
+redacted.red_text.bar_fill	#FFDFDF	#422324	colour
+redacted.red_text.bar_fill_alpha	#FF3838@16%	#FF3E44@16%	colour
+redacted.symbol.frame_width	15	15	pt
+redacted.symbol.frame_height	15	15	pt
+redacted.symbol.ink_width	13	13	pt
+redacted.symbol.ink_height	13	13	pt
+redacted.symbol.fill	#DCDCDC	#3D3D3D	colour
+redacted.symbol.radius	0	0	pt
+redacted.image.frame_width	40	40	pt
+redacted.image.frame_height	20	20	pt
+redacted.image.fill	#DCDCDC	#3D3D3D	colour
+redacted.image.ink_width	40	40	pt
+redacted.image.ink_height	20	20	pt
+redacted.image.radius	0	0	pt
+redacted.shape.fill	#FF383C	#FF4245	colour
+redacted.unredacted.ink	#2E2E2E	#DCDCDC	colour
+redacted.unredacted.hidden_ink	#DCDCDC	#3D3D3D	colour
+redacted.privacy.public_lines	1	1	
+redacted.privacy.public_ink	#303030	#DADADA	colour
+redacted.privacy.secret_ink	#DCDCDC	#3D3D3D	colour
+redacted.privacy.secret_bar_width	38	38	pt
+redacted.privacy.secret_bar_height	10.5	11	pt
+redacted.privacy.secret_fill	#DCDCDC	#3D3D3D	colour
+redacted.privacy_unset.secret_ink	#2B2B2B	#DCDCDC	colour
+redacted.placeholder_sensitive.fill	#FBFBFB	#282828	colour
+redacted.button.ink	#CBCBCB	#4C4C4C	colour
+unavailable.view.x	0	0	pt
+unavailable.view.y	56	56	pt
+unavailable.view.width	400	400	pt
+unavailable.view.height	188	188	pt
+unavailable.label.x	162.5	162.5	pt
+unavailable.label.y	76	76	pt
+unavailable.label.width	75	75	pt
+unavailable.label.height	81	81	pt
+unavailable.description.x	146.5	146.5	pt
+unavailable.description.y	163	163	pt
+unavailable.description.width	107	107	pt
+unavailable.description.height	19	19	pt
+unavailable.action.x	171.5	171.5	pt
+unavailable.action.y	200	200	pt
+unavailable.action.width	57	57	pt
+unavailable.action.height	24	24	pt
+unavailable.ink_rows	4	4	
+unavailable.row0.x	175	175	pt
+unavailable.row0.y	79	79	pt
+unavailable.row0.width	51	51	pt
+unavailable.row0.height	32	32	pt
+unavailable.row0.ink	#BDBDBD	#565656	colour
+unavailable.row1.x	163.5	163.5	pt
+unavailable.row1.y	141.5	141	pt
+unavailable.row1.width	74.5	74.5	pt
+unavailable.row1.height	12.5	13	pt
+unavailable.row1.ink	#808080	#9A9A9A	colour
+unavailable.row2.x	148	147.5	pt
+unavailable.row2.y	166	166	pt
+unavailable.row2.width	106	106.5	pt
+unavailable.row2.height	15	15	pt
+unavailable.row2.ink	#818181	#9A9A9A	colour
+unavailable.row3.x	172	172	pt
+unavailable.row3.y	200	200	pt
+unavailable.row3.width	57	57	pt
+unavailable.row3.height	24	24	pt
+unavailable.row3.ink	#292929	#DEDEDE	colour
+unavailable.simple.ink_rows	2	2	
+unavailable.simple.row0.x	175	175	pt
+unavailable.simple.row0.y	110	110	pt
+unavailable.simple.row0.width	51	51	pt
+unavailable.simple.row0.height	32	32	pt
+unavailable.simple.row1.x	163.5	163.5	pt
+unavailable.simple.row1.y	172.5	172	pt
+unavailable.simple.row1.width	74.5	74.5	pt
+unavailable.simple.row1.height	12.5	13	pt
+unavailable.search.ink_rows	3	3	
+unavailable.search.row0.x	183	183	pt
+unavailable.search.row0.y	90	90	pt
+unavailable.search.row0.width	34.5	34.5	pt
+unavailable.search.row0.height	35	35	pt
+unavailable.search.row1.x	161.5	161.5	pt
+unavailable.search.row1.y	155	155	pt
+unavailable.search.row1.width	78.5	78.5	pt
+unavailable.search.row1.height	13	13	pt
+unavailable.search.row2.x	67	67	pt
+unavailable.search.row2.y	180	180	pt
+unavailable.search.row2.width	265	265	pt
+unavailable.search.row2.height	15	15	pt
+unavailable.search_text.ink_rows	3	3	
+unavailable.search_text.row0.x	183	183	pt
+unavailable.search_text.row0.y	90	90	pt
+unavailable.search_text.row0.width	34.5	34.5	pt
+unavailable.search_text.row0.height	35	35	pt
+unavailable.search_text.row1.x	119.5	119.5	pt
+unavailable.search_text.row1.y	155	155	pt
+unavailable.search_text.row1.width	160.5	161	pt
+unavailable.search_text.row1.height	13	12.5	pt
+unavailable.search_text.row2.x	67	67	pt
+unavailable.search_text.row2.y	180	180	pt
+unavailable.search_text.row2.width	265	265	pt
+unavailable.search_text.row2.height	15	15	pt
+unavailable.reference.title2_size	17	17	pt
+unavailable.reference.no_games_title2_bold	83.074	83.074	pt
+unavailable.reference.no_games_title2	79.463	79.463	pt
+unavailable.reference.no_games_title2_semibold	81.75	81.75	pt
+unavailable.reference.description_body	94.199	94.199	pt
+image_scale.body.text_height	16	16	pt
+image_scale.body.small.width	12	12	pt
+image_scale.body.small.height	12	12	pt
+image_scale.body.small.ink_width	10	10	pt
+image_scale.body.small.ink_height	10	10	pt
+image_scale.body.medium.width	16	16	pt
+image_scale.body.medium.height	14	14	pt
+image_scale.body.medium.ink_width	12	12	pt
+image_scale.body.medium.ink_height	12	12	pt
+image_scale.body.large.width	19	19	pt
+image_scale.body.large.height	17	17	pt
+image_scale.body.large.ink_width	15	15	pt
+image_scale.body.large.ink_height	15	15	pt
+image_scale.title.text_height	26	26	pt
+image_scale.title.small.width	20	20	pt
+image_scale.title.small.height	20	20	pt
+image_scale.title.small.ink_width	16	16	pt
+image_scale.title.small.ink_height	16	16	pt
+image_scale.title.medium.width	26	26	pt
+image_scale.title.medium.height	24	24	pt
+image_scale.title.medium.ink_width	20	20	pt
+image_scale.title.medium.ink_height	20	20	pt
+image_scale.title.large.width	34	34	pt
+image_scale.title.large.height	30	30	pt
+image_scale.title.large.ink_width	25.5	25.5	pt
+image_scale.title.large.ink_height	25.5	25.5	pt
+interpolation.none.quarter	#000000		colour
+interpolation.none.edge	#2F2F2F		colour
+interpolation.none.edge_luma	0.184	0.184	
+interpolation.low.quarter	#000000		colour
+interpolation.low.edge	#2F2F2F		colour
+interpolation.low.edge_luma	0.184	0.184	
+interpolation.medium.quarter	#000000		colour
+interpolation.medium.edge	#2F2F2F		colour
+interpolation.medium.edge_luma	0.184	0.184	
+interpolation.high.quarter	#000000		colour
+interpolation.high.edge	#2F2F2F		colour
+interpolation.high.edge_luma	0.184	0.184	
+interpolation.default.edge_luma	0.184	0.184	
+rendering_mode.template.centre	#FF383C		colour
+rendering_mode.template.corner	#FFFFFF		colour
+rendering_mode.original.centre	#34C759		colour
+rendering_mode.original.corner	#FFFFFF		colour
+rendering_mode.default.centre	#34C759		colour
+rendering_mode.symbol_original.centre	#FF383C		colour
+symbol_rendering.monochrome.single_layer	#FF383C		colour
+symbol_rendering.monochrome.two_layer_ring	#FF383C		colour
+symbol_rendering.monochrome.two_layer_plus	#FFFFFF		colour
+symbol_rendering.hierarchical.single_layer	#FF383C		colour
+symbol_rendering.hierarchical.two_layer_ring	#FFCDCE		colour
+symbol_rendering.hierarchical.two_layer_plus	#FF383C		colour
+symbol_variant.heart.none.width	24	24	pt
+symbol_variant.heart.none.height	22	22	pt
+symbol_variant.heart.fill.width	24	24	pt
+symbol_variant.heart.fill.height	22	22	pt
+symbol_variant.heart.circle.width	24	24	pt
+symbol_variant.heart.circle.height	24	24	pt
+symbol_variant.heart.circle_fill.width	24	24	pt
+symbol_variant.heart.circle_fill.height	24	24	pt
+symbol_variant.heart.slash.width	24	24	pt
+symbol_variant.heart.slash.height	26	26	pt
+symbol_variant.heart.square.width	22	22	pt
+symbol_variant.heart.square.height	22	22	pt
+symbol_variant.missing_falls_back.same_width	1	1	

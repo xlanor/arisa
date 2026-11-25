@@ -1,0 +1,8 @@
+schema = 1
+extends = "default"
+
+[metrics]
+sidebar_width = 160
+
+[colours]
+accent = "blue"
