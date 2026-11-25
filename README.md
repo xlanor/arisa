@@ -1,3 +1,3 @@
 # arisa
 
-UI Framework
+UI Framework licensed under Apache 2.0
