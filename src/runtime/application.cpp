@@ -22,6 +22,7 @@
 #include <format>
 #include <optional>
 #include <string>
+#include <thread>
 
 #include <arisa/runtime/screen_reader.hpp>
 #include <arisa/theme/dynamic_type.hpp>
@@ -456,6 +457,9 @@ class Application::Implementation {
   }
 
   auto waiting() const noexcept -> bool {
+    if (taken_over_) {
+      return true;
+    }
     return (loop_.waiting() || last_frame_.paced || early()) && !embedded_due();
   }
 
@@ -572,11 +576,21 @@ class Application::Implementation {
   void wait() {
     std::chrono::nanoseconds limit = idle_poll;
     const std::chrono::nanoseconds now = clock_.get().now().since_origin();
+    const auto bound = [&](std::chrono::nanoseconds deadline) {
+      if (taken_over_ && deadline <= now) {
+        return;
+      }
+      limit = std::clamp(deadline - now, std::chrono::nanoseconds{0}, limit);
+    };
     if (paced_.has_value()) {
-      limit = std::clamp(*paced_ - now, std::chrono::nanoseconds{0}, limit);
+      bound(*paced_);
     }
     if (const auto start = next_build(); start.has_value()) {
-      limit = std::clamp(*start - now, std::chrono::nanoseconds{0}, limit);
+      bound(*start);
+    }
+    if (taken_over_) {
+      std::this_thread::sleep_for(limit);
+      return;
     }
     if (embedded_->embedded.has_value()) {
       const Embedded& embedded = *embedded_->embedded;
