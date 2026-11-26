@@ -1,6 +1,7 @@
 #include <arisa/components/button.hpp>
 #include <arisa/components/geometry_reader.hpp>
 #include <arisa/components/hstack.hpp>
+#include <arisa/components/scroll_view.hpp>
 #include <arisa/components/text.hpp>
 #include <arisa/components/vstack.hpp>
 #include <arisa/components/zstack.hpp>
@@ -134,6 +135,26 @@ TEST_F(GeometryRuntimeTest, GeometryReaderIsLaidOutFromItsSizeInOneFrame) {
   EXPECT_NEAR(frame_of(*application, "half").width, 150.0F, 0.01F);
   tap(providers, *application, centre(*application, "shrink"));
   EXPECT_NEAR(frame_of(*application, "half").width, 100.0F, 0.01F);
+}
+
+TEST_F(GeometryRuntimeTest,
+       GeometryReaderInABackgroundFillsTheContentInsideAScrollView) {
+  provider::headless::HeadlessProviderFactory providers;
+  Application application =
+      start(providers,
+            components::ScrollView(components::VStack(
+                components::VStack()
+                    .frame({.width = 160.0F, .height = 80.0F})
+                    .background(components::GeometryReader(
+                        [](const composition::GeometryProxy& proxy) -> Element {
+                          return components::VStack()
+                              .frame({.width = proxy.size().width,
+                                      .height = proxy.size().height})
+                              .id("filled");
+                        })))));
+  frames(application, 3);
+  EXPECT_NEAR(frame_of(application, "filled").width, 160.0F, 0.01F);
+  EXPECT_NEAR(frame_of(application, "filled").height, 80.0F, 0.01F);
 }
 
 TEST_F(GeometryRuntimeTest, GeometryReaderPagesSettleWithoutLayout) {

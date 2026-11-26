@@ -1669,6 +1669,10 @@ auto YogaLayout::next_decorated(const composition::Node& node, Sync& sync)
       if (!gatherer.based) {
         entry.scope.hoisted_width = false;
         entry.scope.hoisted_height = false;
+        entry.scope.open_width = false;
+        entry.scope.open_height = false;
+        entry.scope.fixed_width = false;
+        entry.scope.fixed_height = false;
         const auto& bar =
             entry.node.get().interactions().scrolling.safe_area_bar;
         const bool beside = bar.has_value() && (*bar == theme::Edge::leading ||
