@@ -12,7 +12,7 @@ option(ARISA_BUILD_TESTS "Build the GoogleTest suites and register them with cte
 option(ARISA_BUILD_CONFORMANCE_NRO "Build the Switch conformance NRO" OFF)
 option(ARISA_DEBUG_INFO "Compile every target with debug info" OFF)
 if(ARISA_DEBUG_INFO)
-    add_compile_options(-g)
+    add_compile_options(-g1)
 endif()
 set(ARISA_FRAME_POINTER_OPTIONS -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer)
 set(ARISA_TRAP_HEADER "${CMAKE_CURRENT_SOURCE_DIR}/include/arisa/provider/diagnostics/trap.h")
