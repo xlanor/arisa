@@ -60,6 +60,7 @@ if(ARISA_PROVIDERS_HORIZON AND ARISA_HORIZON_DEKO3D)
     if(NOT ARISA_DKSH_COMPILER)
         message(FATAL_ERROR "ARISA_PROVIDERS_HORIZON needs uam (or uam2 for drako3d) to compile the deko3d shaders")
     endif()
+    set(ARISA_DEKO3D_SHADER_FLAGS "" CACHE STRING "Extra shader compiler arguments for arisa's built-in deko3d shaders")
     set(arisa_deko3d_generated "${CMAKE_CURRENT_BINARY_DIR}/generated/deko3d")
     set(arisa_deko3d_sources
         "textured_vsh=vert=${CMAKE_CURRENT_SOURCE_DIR}/shaders/textured.vert"
@@ -75,7 +76,7 @@ if(ARISA_PROVIDERS_HORIZON AND ARISA_HORIZON_DEKO3D)
         add_custom_command(
             OUTPUT "${arisa_deko3d_generated}/${name}.dksh"
             COMMAND "${CMAKE_COMMAND}" -E make_directory "${arisa_deko3d_generated}"
-            COMMAND "${ARISA_DKSH_COMPILER}" -o "${arisa_deko3d_generated}/${name}.dksh"
+            COMMAND "${ARISA_DKSH_COMPILER}" ${ARISA_DEKO3D_SHADER_FLAGS} -o "${arisa_deko3d_generated}/${name}.dksh"
                 -s ${stage} "${source}"
             DEPENDS "${source}"
             VERBATIM)
