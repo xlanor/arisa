@@ -1,5 +1,6 @@
 #include "layout_fixture.hpp"
 
+#include <arisa/components/glass_panel.hpp>
 #include <arisa/components/hstack.hpp>
 #include <arisa/components/scroll_view.hpp>
 #include <arisa/components/spacer.hpp>
@@ -9,6 +10,7 @@
 #include <arisa/composition/alignment.hpp>
 #include <arisa/composition/axes.hpp>
 #include <arisa/composition/modifiers.hpp>
+#include <arisa/theme/colour_value.hpp>
 
 #include <gtest/gtest.h>
 
@@ -290,6 +292,30 @@ TEST_F(FrameTest, ANestedScrollPanelIsBoundedByTheOuterViewport) {
                   .max_height = composition::infinity}));
   EXPECT_FLOAT_EQ(frame(*built, "row").height, 720.0F);
   EXPECT_FLOAT_EQ(frame(*built, "panel").height, 720.0F);
+}
+
+}
+
+namespace arisa::layout {
+
+TEST_F(FrameTest, AGlassPanelAroundAScrollViewHugsItsContent) {
+  const auto built = laid(
+      components::VStack(
+          components::ScrollView(
+              components::VStack(box("first", 40.0F, 60.0F),
+                                 box("second", 40.0F, 60.0F)))
+              .frame({.max_height = 300.0F})
+              .padding(theme::Space{24.0F})
+              .frame({.width = 400.0F, .alignment = Alignment::leading})
+              .background(
+                  theme::ColourValue(theme::ColourRole::window_background)
+                      .opacity(0.82F),
+                  components::GlassPanel::shape(components::PanelRadius::large))
+              .glass_panel(components::PanelRadius::large)
+              .id("panel"),
+          box("dock", 40.0F, 60.0F))
+          .frame({.height = 720.0F}));
+  EXPECT_FLOAT_EQ(frame(*built, "panel").height, 176.0F);
 }
 
 }

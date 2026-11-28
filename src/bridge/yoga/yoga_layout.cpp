@@ -843,8 +843,13 @@ auto YogaLayout::stretches(const composition::Node& node, bool horizontal)
   if (const auto& fixed = horizontal ? frame.width : frame.height) {
     return fixed->is_fraction();
   }
-  if (fills(horizontal ? frame.max_width : frame.max_height)) {
-    return true;
+  if (const auto& cap = horizontal ? frame.max_width : frame.max_height) {
+    if (fills(cap)) {
+      return true;
+    }
+    if (!cap->is_fraction()) {
+      return false;
+    }
   }
   if (node.modifiers().aspect.has_value()) {
     return true;
